@@ -1,0 +1,261 @@
+{
+  "main": {
+    "id": "97c1857da68b294b",
+    "type": "split",
+    "children": [
+      {
+        "id": "8a48afa0e8c5fc41",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b445b82fe9c0020",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "82c900e6e5508ac8",
+    "type": "split",
+    "children": [
+      {
+        "id": "09b679cc0a1cc622",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b741f4c8ce4fb942",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTime",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "d5b5fde3c5bd21ec",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "e30b7cb1cc521963",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "a9e8e2f2cbe25d66",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d36719e1a3c73ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4f951d54be39d0d0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "e06b36d3111682f4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "我的日志/笔记2.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "fe1a44b9caabf974",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "dd9263d420451f75",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "2eab00b1bce6eb57",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "我的日志/笔记2.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "2ea0ea452a494907",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-agent-chat-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "copilot-agent-chat-view"
+            }
+          },
+          {
+            "id": "5a9f100225060b86",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "templates:插入模板": false,
+      "random-note:开始漫游笔记": false,
+      "audio-recorder:开始/结束录音": false,
+      "switcher:打开快速切换": false,
+      "bases:新建数据库": false,
+      "workspaces:管理工作区布局": false,
+      "command-palette:打开命令面板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "copilot:Open Copilot Agent Chat": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "0b445b82fe9c0020",
+  "lastOpenFiles": [
+    "图片、附件/Pasted image 20260917230418.png",
+    "手艺/理论/时间复杂度.md",
+    "手艺/理论/未命名.md",
+    "2026-09-29.md",
+    "图片、附件/Pasted image 20260929221133.png",
+    "图片、附件/Pasted image 20260929220916.png",
+    "图片、附件/Pasted image 20260929220727.png",
+    "图片、附件/Pasted image 20260929220545.png",
+    "图片、附件/Pasted image 20260929220307.png",
+    "图片、附件/Pasted image 20260929220202.png",
+    "2026-09-28.md",
+    "图片、附件/Pasted image 20260928210840.png",
+    "图片、附件/Pasted image 20260928210649.png",
+    "2026-08-07.md",
+    "2026-09-01.md",
+    "图片、附件/Pasted image 20260927231059.png",
+    "图片、附件/Pasted image 20260927230742.png",
+    "2026-09-27.md",
+    "手艺/AI、技术/GitHub Actions.md",
+    "手艺/其他/以撒的结合.md",
+    "手艺/其他/Wallpaper Engine.md",
+    "手艺/其他/Steam 加速.md",
+    "手艺/其他/Steam 安装注册疑难杂症.md",
+    "手艺/其他/Steam 下载安装到注册使用.md",
+    "手艺/AI、技术/给不支持识图的大模型加上本地视觉能力.md",
+    "手艺/AI、技术/LM Studio.md",
+    "手艺/AI、技术/DeepSeek V4 替代 Claude Code.md",
+    "手艺/AI、技术/DeepSeek V4 Flash 正式版.md",
+    "手艺/AI、技术/DeepSeek V4 Pro API.md",
+    "手艺/AI、技术/Windows 上用 WSL 运行 AI Agent.md",
+    "手艺/AI、技术/Windows CMD 与 PowerShell.md",
+    "手艺/理论/0-1 背包问题.md",
+    "手艺/理论/侏儒排序.md",
+    "2026-09-26.md",
+    "手艺/理论/猴子排序VS奇迹排序可视化.md",
+    "手艺/理论/互联网核心协议.md",
+    "手艺/其他",
+    "手艺/理论",
+    "手艺/AI、技术",
+    "手艺/Office",
+    "语言/道本语",
+    "未命名",
+    "语言",
+    "语言",
+    "语言",
+    "手艺",
+    "未命名.canvas"
+  ]
+}
