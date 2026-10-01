@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8a48afa0e8c5fc41",
+        "id": "e892588c5d57398f",
         "type": "tabs",
         "children": [
           {
-            "id": "0b445b82fe9c0020",
+            "id": "35134687862f3970",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "2026-08-03.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "2026-08-03"
             }
           }
         ]
@@ -190,7 +194,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -208,10 +213,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0b445b82fe9c0020",
+  "active": "35134687862f3970",
   "lastOpenFiles": [
+    "2026-08-04.md",
+    "2026-08-03.md",
+    "全流程报告/蓝牙耳机音频降速-全流程报告.md",
+    "全流程报告/未命名",
+    "图片、附件/蓝牙耳机音频降速-全流程报告.md",
+    "2026-09-30.md",
+    "全流程报告",
     "图片、附件/Pasted image 20260917230418.png",
-    "手艺/理论/时间复杂度.md",
+    "“手艺”/理论/时间复杂度.md",
     "手艺/理论/未命名.md",
     "2026-09-29.md",
     "图片、附件/Pasted image 20260929221133.png",
@@ -226,36 +238,29 @@
     "2026-08-07.md",
     "2026-09-01.md",
     "图片、附件/Pasted image 20260927231059.png",
-    "图片、附件/Pasted image 20260927230742.png",
     "2026-09-27.md",
-    "手艺/AI、技术/GitHub Actions.md",
-    "手艺/其他/以撒的结合.md",
-    "手艺/其他/Wallpaper Engine.md",
-    "手艺/其他/Steam 加速.md",
-    "手艺/其他/Steam 安装注册疑难杂症.md",
-    "手艺/其他/Steam 下载安装到注册使用.md",
-    "手艺/AI、技术/给不支持识图的大模型加上本地视觉能力.md",
-    "手艺/AI、技术/LM Studio.md",
-    "手艺/AI、技术/DeepSeek V4 替代 Claude Code.md",
-    "手艺/AI、技术/DeepSeek V4 Flash 正式版.md",
-    "手艺/AI、技术/DeepSeek V4 Pro API.md",
-    "手艺/AI、技术/Windows 上用 WSL 运行 AI Agent.md",
-    "手艺/AI、技术/Windows CMD 与 PowerShell.md",
-    "手艺/理论/0-1 背包问题.md",
-    "手艺/理论/侏儒排序.md",
-    "2026-09-26.md",
-    "手艺/理论/猴子排序VS奇迹排序可视化.md",
-    "手艺/理论/互联网核心协议.md",
-    "手艺/其他",
-    "手艺/理论",
-    "手艺/AI、技术",
-    "手艺/Office",
+    "“手艺”/AI、技术/GitHub Actions.md",
+    "“手艺”/其他/以撒的结合.md",
+    "“手艺”/其他/Wallpaper Engine.md",
+    "“手艺”/其他/Steam 加速.md",
+    "“手艺”/其他/Steam 安装注册疑难杂症.md",
+    "“手艺”/其他/Steam 下载安装到注册使用.md",
+    "“手艺”/AI、技术/给不支持识图的大模型加上本地视觉能力.md",
+    "“手艺”/AI、技术/LM Studio.md",
+    "“手艺”/AI、技术/DeepSeek V4 替代 Claude Code.md",
+    "“手艺”/AI、技术/DeepSeek V4 Flash 正式版.md",
+    "“手艺”/AI、技术/DeepSeek V4 Pro API.md",
+    "“手艺”/AI、技术/Windows 上用 WSL 运行 AI Agent.md",
+    "“手艺”/AI、技术/Windows CMD 与 PowerShell.md",
+    "“手艺”/理论/0-1 背包问题.md",
+    "“手艺”/其他",
+    "“手艺”/理论",
+    "“手艺”/AI、技术",
+    "“手艺”/Office",
     "语言/道本语",
-    "未命名",
     "语言",
     "语言",
     "语言",
-    "手艺",
     "未命名.canvas"
   ]
 }
