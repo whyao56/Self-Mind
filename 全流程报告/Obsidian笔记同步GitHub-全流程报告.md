@@ -192,21 +192,17 @@ To https://github.com/whyao56/Self-Mind.git
 
 ## 七、后续建议
 
-### 1. 更换为永久 PAT（推荐）
+### 1. 永久 PAT（已完成 ✅）
 
-现有 `gho_` 令牌可能再次过期。生成永久 PAT：
+原本使用 `gho_` 开头的浏览器临时授权令牌，容易过期。现已更换为用户手动生成的永久 PAT（`ghp_...`，40 位），并存入 Windows 凭据管理器：
 
-1. 打开 https://github.com/settings/tokens
-2. 选 **Tokens (classic)** → **Generate new token (classic)**
-3. Note 填 `obsidian-backup`
-4. Expiration 选 **No expiration**
-5. Scopes 勾选 **`repo`**
-6. 生成后复制 `ghp_...`（只显示一次）
-
-替换旧凭据：
 ```bash
 printf "protocol=https\nhost=github.com\nusername=whyao56\npassword=你的新PAT\n\n" | git credential-manager store
 ```
+
+验证：`curl -H "Authorization: token <PAT>" https://api.github.com/user` 返回 `200`。
+
+> 若日后仍需更换：GitHub → Settings → Developer settings → **Tokens (classic)** → Generate new token (classic)，Expiration 选 **No expiration**，Scopes 勾选 **`repo`**，复制 `ghp_...`（只显示一次）。
 
 ### 2. 缩减仓库体积
 
@@ -220,7 +216,59 @@ printf "protocol=https\nhost=github.com\nusername=whyao56\npassword=你的新PAT
 
 ---
 
-## 八、快速排障口诀
+## 八、补充问题：分支名不匹配导致 push 被拒
+
+### 现象
+
+执行 `git push` 报错：
+
+```
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.
+To push to the upstream branch on the remote, use
+    git push Self-Mind HEAD:20260930
+To push to the branch of the same name on the remote, use
+    git push Self-Mind HEAD
+```
+
+### 原因
+
+| 项目 | 名字 |
+|---|---|
+| 本地分支 | `master` |
+| 远程分支 | `20260930` |
+
+Git 默认策略 `push.default = simple` 要求**本地分支与上游分支同名**才肯推送。这里 `master ≠ 20260930`，所以被拒绝。结果是自动备份一直在 commit（积累了大量提交），但始终推不上去。
+
+### 修复
+
+**方案 A（推荐，保持分支名不变）**
+
+```bash
+git config push.default upstream
+```
+
+作用：允许「本地分支名与远程分支名不同」时也能推送。配置写入 `.git/config`，持久生效。
+
+**方案 B（让两边同名）**
+
+```bash
+git branch -m master 20260930   # 本地分支改名
+git push -u Self-Mind 20260930
+```
+
+### 验证
+
+```bash
+git push            # 应成功
+git status -sb      # 应显示 master...Self-Mind/20260930，无 ahead/behind
+```
+
+本次修复结果：16 个积压提交全部推送成功（`af381e4..1f1d614`），`push.default = upstream` 已持久化。
+
+---
+
+## 九、快速排障口诀
 
 | 症状 | 检查点 |
 |---|---|
@@ -229,3 +277,5 @@ printf "protocol=https\nhost=github.com\nusername=whyao56\npassword=你的新PAT
 | 连不上 GitHub | Clash 是否开启；`curl -x http://127.0.0.1:7897 https://github.com` |
 | push 特别慢 | 仓库体积；`http.postBuffer`、`core.compression` 设置 |
 | 提示 non-fast-forward | 先 `git pull`，再 `git push` |
+| **分支名不匹配 / upstream 报错** | `git config push.default upstream` |
+| 长期没推上去 | `git status -sb` 看 ahead 数字；`git push` 补推 |
