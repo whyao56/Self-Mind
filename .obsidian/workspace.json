@@ -194,8 +194,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -215,6 +214,7 @@
   },
   "active": "35134687862f3970",
   "lastOpenFiles": [
+    "全流程报告/Obsidian笔记同步GitHub-全流程报告.md",
     "2026-08-04.md",
     "2026-08-03.md",
     "全流程报告/蓝牙耳机音频降速-全流程报告.md",
@@ -252,7 +252,6 @@
     "“手艺”/AI、技术/DeepSeek V4 Pro API.md",
     "“手艺”/AI、技术/Windows 上用 WSL 运行 AI Agent.md",
     "“手艺”/AI、技术/Windows CMD 与 PowerShell.md",
-    "“手艺”/理论/0-1 背包问题.md",
     "“手艺”/其他",
     "“手艺”/理论",
     "“手艺”/AI、技术",
