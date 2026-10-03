@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "全流程报告/tidewatch-网络水军识别引擎-全流程报告.md",
+                "file": "“手艺”/理论/傅里叶变换.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tidewatch-网络水军识别引擎-全流程报告"
+              "title": "傅里叶变换"
             }
           }
         ]
@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#傅里叶变换",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +79,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -212,8 +213,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "35134687862f3970",
+  "active": "d5b5fde3c5bd21ec",
   "lastOpenFiles": [
+    "2026-10-03.md",
+    "“手艺”/理论/傅里叶变换.md",
+    "全流程报告/tidewatch-网络水军识别引擎-全流程报告.md",
     "全流程报告/RAG知识库问答项目-全流程报告.md",
     "全流程报告/Obsidian笔记同步GitHub-全流程报告.md",
     "全流程报告/蓝牙耳机音频降速-全流程报告.md",
@@ -237,9 +241,6 @@
     "2026-09-03.md",
     "2026-09-02.md",
     "2026-09-01.md",
-    "2026-08-31.md",
-    "2026-08-30.md",
-    "2026-08-29.md",
     "图片、附件/正方形几何综合题试卷.png",
     "图片、附件/0297670E.gif",
     "全流程报告/未命名",
