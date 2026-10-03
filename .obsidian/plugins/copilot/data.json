@@ -398,25 +398,6 @@
         }
       },
       {
-        "id": "kimi-k2.6",
-        "displayName": "Kimi K2.6",
-        "description": "Good for long-running reasoning tasks.",
-        "toolCall": true,
-        "reasoning": true,
-        "reasoningEfforts": [],
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "limits": {
-          "context": 262144
-        }
-      },
-      {
         "id": "glm-5.2",
         "displayName": "GLM-5.2",
         "description": "A frontier open-weight model.",
