@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "“手艺”/AI、技术/LM Studio.md",
+                "file": "全流程报告/GitHub上传完整操作手册-全流程报告.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LM Studio"
+              "title": "GitHub上传完整操作手册-全流程报告"
             }
           }
         ]
@@ -214,8 +214,8 @@
   },
   "active": "35134687862f3970",
   "lastOpenFiles": [
-    "“手艺”/AI、技术/给不支持识图的大模型加上本地视觉能力.md",
     "“手艺”/AI、技术/LM Studio.md",
+    "“手艺”/AI、技术/给不支持识图的大模型加上本地视觉能力.md",
     "“手艺”/AI、技术/清理 C 盘.md",
     "“手艺”/AI、技术/装 D 盘后 C 盘仍爆满.md",
     "“手艺”/AI、技术/Windows语音输入工具.md",
