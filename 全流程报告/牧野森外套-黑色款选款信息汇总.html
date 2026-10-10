@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>mYes牧野森 10 件外套 · 黑色款选款信息汇总（实物图版）</title>
+<style>
+  :root{
+    --bg:#f5f6f8; --card:#ffffff; --line:#e5e7eb; --ink:#1a1a1a; --ink2:#5a6270;
+    --ink3:#8a929e; --red:#e8442a; --redbg:#fff1ee; --amber:#c97a00; --amberbg:#fff8e8;
+    --green:#0f9d58; --greenbg:#eefaf2; --blue:#2563eb; --bluebg:#eef4ff;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+    padding:36px 20px 64px;
+  }
+  .wrap{max-width:1120px;margin:0 auto}
+
+  /* ---- header ---- */
+  header{margin-bottom:34px}
+  .kicker{
+    display:inline-block;font-size:12px;letter-spacing:.14em;font-weight:700;
+    color:var(--red);background:var(--redbg);padding:5px 12px;border-radius:99px;margin-bottom:14px;
+  }
+  h1{font-size:30px;line-height:1.35;font-weight:800;letter-spacing:-.01em}
+  h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink2);margin-top:8px;letter-spacing:0}
+
+  /* ---- source banner ---- */
+  .src{
+    display:flex;gap:14px;align-items:flex-start;
+    background:var(--bluebg);border:1px solid #d7e4ff;border-left:4px solid var(--blue);
+    border-radius:10px;padding:15px 18px;margin:26px 0 34px;
+  }
+  .src .ic{font-size:19px;line-height:1.3}
+  .src b{color:var(--blue)}
+  .src p{font-size:13.5px;color:#274063}
+  .src p+p{margin-top:6px}
+
+  /* ---- stats ---- */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:12px;margin-bottom:38px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .stat .n{font-size:24px;font-weight:800;letter-spacing:-.02em}
+  .stat .n span{font-size:14px;font-weight:600;color:var(--ink2);margin-left:2px}
+  .stat .l{font-size:12.5px;color:var(--ink3);margin-top:3px}
+  .stat.hl{background:var(--redbg);border-color:#ffd9d1}
+  .stat.hl .n{color:var(--red)}
+  .stat.hl .l{color:#b0472f}
+
+  /* ---- section ---- */
+  h2{
+    font-size:19px;font-weight:800;margin:44px 0 6px;padding-left:13px;position:relative;
+  }
+  h2::before{
+    content:"";position:absolute;left:0;top:.28em;bottom:.28em;width:4px;
+    background:var(--red);border-radius:2px;
+  }
+  .sub{font-size:13.5px;color:var(--ink3);margin-bottom:20px;padding-left:13px}
+
+  /* ---- cards ---- */
+  .item{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    overflow:hidden;margin-bottom:16px;
+    display:grid;grid-template-columns:270px 1fr;
+  }
+  .item .ph{background:#f0f1f4;position:relative;display:flex;align-items:center;justify-content:center}
+  .item .ph img{width:100%;height:100%;object-fit:cover;display:block}
+  .item .ph .no{
+    position:absolute;top:10px;left:10px;background:rgba(0,0,0,.72);color:#fff;
+    font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:99px;letter-spacing:.04em;
+  }
+  .item .bd{padding:18px 22px 20px}
+  .ttl{font-size:15.5px;font-weight:700;line-height:1.5;margin-bottom:10px}
+  .meta{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
+  .chip{
+    font-size:11.5px;padding:3px 9px;border-radius:6px;font-weight:600;
+    background:#f1f3f6;color:#4b5360;border:1px solid #e7eaef;
+  }
+  .chip.shop{background:#f6f1ff;color:#6d3fc4;border-color:#e4d9ff}
+  .chip.price{background:var(--redbg);color:var(--red);border-color:#ffd9d1}
+  .chip.price em{font-style:normal;text-decoration:line-through;opacity:.55;font-weight:500;margin-left:5px}
+  .chip.tm{background:#fff3f0;color:#d4380d;border-color:#ffd6cc}
+
+  .look{font-size:13.8px;color:#33383f;line-height:1.82}
+  .look b{color:var(--ink)}
+  .look .lb{
+    display:inline-block;font-size:12px;font-weight:700;color:var(--ink3);
+    letter-spacing:.06em;margin-bottom:3px;
+  }
+  .note{
+    margin-top:13px;font-size:13px;border-radius:9px;padding:10px 13px;
+    background:var(--amberbg);border:1px solid #ffe6b3;color:#7a5200;
+  }
+  .note.ok{background:var(--greenbg);border-color:#c7ecd7;color:#0a6b3c}
+  .note.warn{background:var(--redbg);border-color:#ffd9d1;color:#a53a1e}
+  .note b{font-weight:800}
+
+  /* ---- tables ---- */
+  table{width:100%;border-collapse:collapse;background:var(--card);border-radius:var(--radius);overflow:hidden;font-size:13.5px;border:1px solid var(--line)}
+  th,td{padding:11px 13px;text-align:left;border-bottom:1px solid var(--line)}
+  th{background:#fafbfc;font-weight:700;font-size:12.5px;color:var(--ink2);white-space:nowrap}
+  tr:last-child td{border-bottom:none}
+  td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+  .tag{font-size:11px;padding:2px 7px;border-radius:5px;font-weight:700;white-space:nowrap}
+  .tag.b{background:var(--redbg);color:var(--red)}
+  .tag.g{background:var(--greenbg);color:var(--green)}
+  .tag.y{background:var(--amberbg);color:var(--amber)}
+  .tag.x{background:#f1f3f6;color:#7a828e}
+
+  /* ---- checklist ---- */
+  .ck{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:6px 22px 16px}
+  .ck li{list-style:none;padding:12px 0 12px 32px;position:relative;font-size:14px;border-bottom:1px dashed #eceff3}
+  .ck li:last-child{border-bottom:none}
+  .ck li::before{
+    content:"";position:absolute;left:4px;top:17px;width:15px;height:15px;
+    border:2px solid #c3cad4;border-radius:4px;
+  }
+  .ck li b{color:var(--red)}
+
+  /* ---- limit ---- */
+  .limit{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 24px;font-size:13.5px;color:#3a424e}
+  .limit h3{font-size:14.5px;font-weight:800;margin-bottom:10px}
+  .limit ul{margin:8px 0 0 18px}
+  .limit li{margin-bottom:7px}
+  code{
+    background:#f1f3f6;border:1px solid #e5e8ee;border-radius:5px;
+    padding:1px 6px;font-size:12.5px;font-family:ui-monospace,Consolas,monospace;color:#b1301a;
+  }
+  footer{margin-top:46px;text-align:center;font-size:12.5px;color:var(--ink3)}
+  @media(max-width:760px){
+    .item{grid-template-columns:1fr}
+    .item .ph{aspect-ratio:1/1}
+    h1{font-size:23px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <span class="kicker">选款信息汇总 · 实物图版</span>
+  <h1>mYes牧野森 10 件外套 · 黑色款
+    <small>按你的要求统一取"黑色"，逐件附实物主图与外观实录</small>
+  </h1>
+</header>
+
+<div class="src">
+  <div class="ic">📌</div>
+  <div>
+    <p><b>本版数据来源已升级。</b>上一版只能从分享短链解析出商品 ID 和分享价，颜色与外观靠品类推断，我在文末明确标注了"不含详情页原文"。</p>
+    <p>本版从你本机「淘宝桌面版」客户端的本地缓存中取到了<b>官方商品标题、店铺名、商品主图和原价／折后价</b>，并把 10 张主图逐张读取，<b>外观描述改为看图实录，不再有推断成分</b>。</p>
+    <p>唯一仍缺的是 <b>SKU 级数据（颜色列表、面料成分、尺码表）</b>——这部分必须登录后由详情页接口返回，详见文末「数据边界」。</p>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="n">10<span>件</span></div><div class="l">商品总数</div></div>
+  <div class="stat"><div class="n">5<span>家</span></div><div class="l">涉及店铺</div></div>
+  <div class="stat hl"><div class="n">4<span>件</span></div><div class="l">主图即黑色</div></div>
+  <div class="stat"><div class="n">&#165;121<span>起</span></div><div class="l">已知折后最低价</div></div>
+  <div class="stat"><div class="n">3<span>件</span></div><div class="l">同型徽章夹克（易买重）</div></div>
+</div>
+
+<h2>逐件外观实录</h2>
+<p class="sub">每件按「版型 → 领型 → 门襟 → 收口 → 口袋 → 装饰 → 面料观感」顺序描述，全部基于主图所见</p>
+
+<!-- 1 -->
+<div class="item">
+  <div class="ph"><span class="no">01</span><img src="牧野森商品图/01-751405747393.jpg" alt="mYes牧野森美式潮牌棒球服飞行员夹克棉衣"></div>
+  <div class="bd">
+    <div class="ttl">mYes牧野森美式潮牌棒球服飞行员夹克棉衣潮复古秋冬季加厚外套男</div>
+    <div class="meta">
+      <span class="chip shop">MYES牧野森原创潮牌</span>
+      <span class="chip price">&#165;121 <em>&#165;138</em></span>
+      <span class="chip">ID 751405747393</span>
+      <span class="chip">主图色：深藏青</span>
+    </div>
+    <div class="look">
+      <span class="lb">外观实录</span>
+      标准 MA-1 飞行员夹克版型，<b>罗纹立领</b>＋<b>金属拉链门襟</b>，袖口与下摆均为罗纹收口。装饰集中在上半身：左胸一枚黄底黑字「CATTEE」长方形徽章，其下压一条红蓝双色横条贴布；右胸是圆形「75 CATTEE RACING」徽章；右袖上部一块黄色长条臂章，左袖上部一块红黄斜纹「CATTEE MADE」臂章。面料是哑光锦纶／涤纶，内里深色绗缝夹棉，属于"徽章飞行员夹克"里配色最克制的一档。
+    </div>
+    <div class="note">主图展示的是<b>深藏青</b>而非黑色，说明该款至少有藏青＋其他配色。黑色是否在售，需在 SKU 面板里确认。</div>
+  </div>
+</div>
+
+<!-- 2 -->
+<div class="item">
+  <div class="ph"><span class="no">02</span><img src="牧野森商品图/02-744916639002.jpg" alt="mYes牧野森短款飞行员夹克"></div>
+  <div class="bd">
+    <div class="ttl">mYes牧野森短款飞行员夹克cleanfit高级感美式棒球服厚高街外套男</div>
+    <div class="meta">
+      <span class="chip shop">MYES牧野森原创潮牌</span>
+      <span class="chip price">&#165;122 <em>&#165;148</em></span>
+      <span class="chip">ID 744916639002</span>
+      <span class="chip">主图色：深灰</span>
+    </div>
+    <div class="look">
+      <span class="lb">外观实录</span>
+      <b>短款</b>飞行员夹克，罗纹立领、金属拉链门襟、罗纹收口。左胸一枚圆形罗盘徽章（环刻 STORM ISLAND）＋其下一枚长方识别标；右胸由三部分组成——米字旗贴布、「ISLAND」小标、以及三行花体英文贴布。左臂有一个<b>带金属拉链的袖袋</b>，这是飞行员夹克标志性的 utility 口袋，位置在外袖中段。内衬同色绗缝。整体装饰偏冷色、密度低，是这批里观感最"干净高级"的一件。
+    </div>
+    <div class="note">主图是<b>深灰</b>。短款版型对身高敏感，偏矮或上身偏长的人穿上容易显"衣短袖长"，建议优先试穿或选常规款。</div>
+  </div>
+</div>
+
+<!-- 3 -->
+<div class="item">
+  <div class="ph"><span class="no">03</span><img src="牧野森商品图/03-981350347587.jpg" alt="MYES牧野森美式复古风立领皮夹克"></div>
+  <div class="bd">
+    <div class="ttl">MYES牧野森美式复古风立领皮夹克男宽松工装外套黑色机车麂皮夹克</div>
+    <div class="meta">
+      <span class="chip shop">MYES牧野森原创潮牌</span>
+      <span class="chip price">&#165;191 <em>&#165;218</em></span>
+      <span class="chip">ID 981350347587</span>
+      <span class="chip">主图色：正黑</span>
+    </div>
+    <div class="look">
+      <span class="lb">外观实录</span>
+      <b>反绒麂皮质感</b>夹克，绒面哑光、有自然的深浅纹路。立领，领口两侧设金属按扣；金属拉链门襟。左右胸各一个<b>带袋盖的贴袋</b>，袋盖上有金属按扣，并配一条斜向金属拉链作装饰。下摆为<b>弹性松紧织带</b>（不是罗纹）。内里深色绗缝。整体走"机车／工装"气质，是这批 10 件里唯一走皮感路线的一件。
+    </div>
+    <div class="note ok"><b>主图即黑色，标题也明写"黑色"</b>——这件是你这批里黑色可购性最确定的一件，也是最贴合"黑色"需求的一件。</div>
+  </div>
+</div>
+
+<!-- 4 -->
+<div class="item">
+  <div class="ph"><span class="no">04</span><img src="牧野森商品图/04-738002906996.jpg" alt="mYes牧野森棒球服男春秋新款男士外套"></div>
+  <div class="bd">
+    <div class="ttl">mYes牧野森棒球服男春秋新款男士外套立领飞行服夹克宽松日系上衣</div>
+    <div class="meta">
+      <span class="chip shop">牧野森旗舰店</span>
+      <span class="chip tm">天猫店</span>
+      <span class="chip price">&#165;128</span>
+      <span class="chip">ID 738002906996</span>
+      <span class="chip">主图色：黑身 + 灰帽</span>
+    </div>
+    <div class="look">
+      <span class="lb">外观实录</span>
+      <b>连帽</b>飞行员夹克，帽子为浅麻灰色，与黑色衣身形成明显撞色；帽口为白色抽绳。左胸一枚棕色圆形徽章（滑雪者剪影）。左臂设一个带袋盖的拉链袖袋。罗纹袖口与下摆。面料哑光。因为多了帽子，气质从"飞行员"偏向了"日系街头"，是这 10 件里唯一的连帽款。
+    </div>
+    <div class="note">黑身＋灰帽是撞色设计，选黑色得到的就是图上这个效果。<b>本件为天猫「牧野森旗舰店」，与前面几家淘宝店不是同一店铺</b>，折扣与售后规则也不同。</div>
+  </div>
+</div>
+
+<!-- 5 -->
+<div class="item">
+  <div class="ph"><span class="no">05</span><img src="牧野森商品图/05-751788600555.jpg" alt="mYes牧野森国潮牌美式复古夹克字母棉服"></div>
+  <div class="bd">
+    <div class="ttl">mYes牧野森国潮牌美式复古夹克字母棉服男冬季情侣高街女棉衣外套</div>
+    <div class="meta">
+      <span class="chip shop">牧野森旗舰店</span>
+      <span class="chip tm">天猫店</span>
+      <span class="chip price">&#165;148</span>
+      <span class="chip">ID 751788600555</span>
+      <span class="chip">主图色：米白</span>
+    </div>
+    <div class="look">
+      <span class="lb">外观实录</span>
+      常规立领棒球夹克版型，罗纹立领＋拉链门襟＋罗纹收口。装饰全部为<b>刺绣</b>、没有贴布徽章：右胸一枚飞翼五星刺绣；左胸是大片英文字母刺绣，肉眼可辨 MOGLENCH、83、LigieSlus、OIJIESHI、RADIFLCNTA 等字样，字母用米白配浅棕描边。整体走"复古字母"路线，观感比徽章款素净。
+    </div>
+    <div class="note warn">主图是<b>米白</b>，这批里唯一的浅色系。如果你确定只要黑色，这件需重点确认黑色是否在售——浅色主图款常见只做浅色。</div>
+  </div>
+</div>
+
+<!-- 6 -->
+<div class="item">
+  <div class="ph"><span class="no">06</span><img src="牧野森商品图/06-681654347702.jpg" alt="mYes牧野森秋冬季男女情侣加棉飞行员夹克"></div>
+  <div class="bd">
+    <div class="ttl">mYes牧野森秋冬季男女情侣加棉飞行员夹克外套加厚街头棒球服棉衣</div>
+    <div class="meta">
+      <span class="chip shop">mYes牧野森潮牌</span>
+      <span class="chip price">&#165;148</span>
+      <span class="chip">ID 681654347702</span>
+      <span class="chip">主图色：军绿</span>
+      <span class="chip">⚠ 与 01/08 同型</span>
+    </div>
+    <div class="look">
+      <span class="lb">外观实录</span>
+      罗纹立领飞行员夹克，加棉。徽章密度是这批最高的一件：右胸「Style」六边形徽章；右臂「SENULANG」橙色长条＋一枚地球圆徽章；左胸是「SENLE / SENELL MOTORS INC / GLENDALE CALIFORNIA」大型圆形徽章；左臂椭圆美国国旗标＋上部拉链袖袋＋方形贴标。内里深色绗缝。整体是典型的美式复古徽章堆叠风。
+    </div>
+    <div class="note warn">主图<b>军绿</b>。<b>这件与 01、08 属同一版型、仅徽章主题不同</b>——三件里选一件即可，别买重。</div>
+  </div>
+</div>
+
+<!-- 7 -->
+<div class="item">
+  <div class="ph"><span class="no">07</span><img src="牧野森商品图/07-664931423835.jpg" alt="NASA联名宇航员外套"></div>
+  <div class="bd">
+    <div class="ttl">NASA联名宇航员外套男休闲飞行员夹克男女情侣秋冬潮牌棉衣棒球服</div>
+    <div class="meta">
+      <span class="chip shop">猩猩潮品 原创潮牌特卖店</span>
+      <span class="chip tm">非牧野森品牌</span>
+      <span class="chip price">&#165;128</span>
+      <span class="chip">ID 664931423835</span>
+      <span class="chip">主图色：浅灰绿</span>
+    </div>
+    <div class="look">
+      <span class="lb">外观实录</span>
+      连帽飞行员夹克，帽子浅灰绿色。胸前一处红色 NASA 刺绣标＋火箭登月徽章；右胸一枚蓝色阿波罗宇航员圆徽章，其下是 AIRFORCE 方形标；左胸一枚蓝黑圆徽章；左臂为美国国旗臂章，配<b>多功能拉链袖袋</b>（带盖、多层，工装感明显）。加棉夹克。主图右上角标注「送中国国旗两张」。
+    </div>
+    <div class="note warn">标题和店铺都表明这<b>不是 mYes牧野森品牌</b>，而是猩猩潮品店的 NASA 联名款。如果你只想要牧野森本牌，这件可以排除。</div>
+  </div>
+</div>
+
+<!-- 8 -->
+<div class="item">
+  <div class="ph"><span class="no">08</span><img src="牧野森商品图/08-850033209606.jpg" alt="MYES美式复古刺绣棒球棉服"></div>
+  <div class="bd">
+    <div class="ttl">MYES美式复古刺绣棒球棉服外套男女秋冬季加厚棉衣飞行员夹克棉袄</div>
+    <div class="meta">
+      <span class="chip shop">MYES牧野森原创潮牌</span>
+      <span class="chip price">&#165;138</span>
+      <span class="chip">ID 850033209606</span>
+      <span class="chip">主图色：军绿</span>
+      <span class="chip">⚠ 与 01/06 同型</span>
+    </div>
+    <div class="look">
+      <span class="lb">外观实录</span>
+      罗纹立领飞行员棉服，罗纹袖口与下摆。徽章走"字母绣标"路线：左胸「CLASSIC」黄底标＋「BEST AND Wonderful / QIJIESHI」白色大绣标；右胸「HIGH / QIJIESHI STYLE」方标；右臂「QR / QIJIESHI」棕底方标；左臂「77 FASHION」黑红圆标。内里深色绗缝。
+    </div>
+    <div class="note warn">主图<b>军绿</b>。<b>与 01、06 同型</b>，区别只在徽章主题与店铺。三件里选一件。</div>
+  </div>
+</div>
+
+<!-- 9 -->
+<div class="item">
+  <div class="ph"><span class="no">09</span><img src="牧野森商品图/09-687542774836.jpg" alt="mYes牧野森双面穿情侣款防寒服"></div>
+  <div class="bd">
+    <div class="ttl">mYes牧野森双面穿情侣款防寒服男女冬季休闲防风保暖面包服外套</div>
+    <div class="meta">
+      <span class="chip shop">MYES牧野森原创潮牌</span>
+      <span class="chip price">&#165;228</span>
+      <span class="chip">ID 687542774836</span>
+      <span class="chip">主图色：黑／深灰（双面）</span>
+    </div>
+    <div class="look">
+      <span class="lb">外观实录</span>
+      立领飞行员棉服（面包服），版型蓬松。胸前印大字英文标语「In some strange corner of a beautiful world」，下方一个橙色 V 形标；左袖口印「AUNVPS」字样，口袋附近有橙色小织唛。内里深色、右胸有横条饰边。主图除正面外还展示了<b>另一面的配色</b>，可见深色面与印花面对比。
+    </div>
+    <div class="note warn"><b>这是双面穿款，也是这批里最容易买错的一件。</b>双面款通常一面黑、另一面是别的配色或印花，下单前必须在 SKU 里确认"黑色"指的是<b>哪一面</b>——外面还是内衬面。</div>
+  </div>
+</div>
+
+<!-- 10 -->
+<div class="item">
+  <div class="ph"><span class="no">10</span><img src="牧野森商品图/10-658887478600.jpg" alt="秋冬季加厚潮牌棒球棉服工装外套"></div>
+  <div class="bd">
+    <div class="ttl">秋冬季加厚潮牌棒球棉服男女韩版宽松飞行员夹克棉衣情侣工装外套</div>
+    <div class="meta">
+      <span class="chip shop">贰次方 STUDIO 原创潮牌</span>
+      <span class="chip tm">非牧野森品牌</span>
+      <span class="chip price">&#165;128</span>
+      <span class="chip">ID 658887478600</span>
+      <span class="chip">主图色：黑</span>
+    </div>
+    <div class="look">
+      <span class="lb">外观实录</span>
+      立领棒球棉服，<b>门襟为金属按扣而非拉链</b>——这是这 10 件里唯一的按扣款。胸前一枚紫色绣标；右胸一枚盾形徽章＋橙红小标；左臂设工装风方形口袋，左袖另有一枚圆形徽章。罗纹袖口与下摆。整体是"工装＋棒球"的混合气质。
+    </div>
+    <div class="note">主图即黑色，黑色基本确定在售。<b>但这不是牧野森品牌</b>，是「贰次方 STUDIO」店。</div>
+  </div>
+</div>
+
+<h2>一眼看全：价格与归属对照</h2>
+<p class="sub">「折后价」为客户端缓存记录的实际到手价，「分享价」为分享短链携带的价格参数</p>
+<table>
+  <thead>
+    <tr>
+      <th>#</th><th>款式（简）</th><th>店铺</th><th class="num">折后价</th><th class="num">原价／分享价</th>
+      <th>主图色</th><th>黑色把握</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>01</td><td>徽章飞行员夹克（CATTEE）</td><td>MYES牧野森原创潮牌</td><td class="num">&#165;121</td><td class="num">&#165;138 / &#165;128</td><td>深藏青</td><td><span class="tag y">待确认</span></td></tr>
+    <tr><td>02</td><td>短款飞行员夹克</td><td>MYES牧野森原创潮牌</td><td class="num">&#165;122</td><td class="num">&#165;148 / &#165;138</td><td>深灰</td><td><span class="tag y">待确认</span></td></tr>
+    <tr><td>03</td><td>立领麂皮／皮夹克</td><td>MYES牧野森原创潮牌</td><td class="num">&#165;191</td><td class="num">&#165;218 / &#165;218</td><td><b>正黑</b></td><td><span class="tag g">确定在售</span></td></tr>
+    <tr><td>04</td><td>连帽飞行员夹克（黑＋灰帽）</td><td>牧野森旗舰店 · 天猫</td><td class="num">—</td><td class="num">— / &#165;128</td><td><b>黑</b></td><td><span class="tag g">基本确定</span></td></tr>
+    <tr><td>05</td><td>字母刺绣棒球夹克</td><td>牧野森旗舰店 · 天猫</td><td class="num">—</td><td class="num">— / &#165;148</td><td>米白</td><td><span class="tag x">风险高</span></td></tr>
+    <tr><td>06</td><td>徽章飞行员夹克（SENLE）</td><td>mYes牧野森潮牌</td><td class="num">—</td><td class="num">— / &#165;148</td><td>军绿</td><td><span class="tag y">待确认</span></td></tr>
+    <tr><td>07</td><td>NASA 联名连帽夹克</td><td>猩猩潮品 <span class="tag x">非本牌</span></td><td class="num">—</td><td class="num">— / &#165;128</td><td>浅灰绿</td><td><span class="tag y">待确认</span></td></tr>
+    <tr><td>08</td><td>徽章飞行员棉服（QIJIESHI）</td><td>MYES牧野森原创潮牌</td><td class="num">—</td><td class="num">— / &#165;138</td><td>军绿</td><td><span class="tag y">待确认</span></td></tr>
+    <tr><td>09</td><td>双面穿防寒面包服</td><td>MYES牧野森原创潮牌</td><td class="num">—</td><td class="num">— / &#165;228</td><td><b>黑</b>／深灰</td><td><span class="tag b">需选面</span></td></tr>
+    <tr><td>10</td><td>按扣棒球棉服（工装）</td><td>贰次方 STUDIO <span class="tag x">非本牌</span></td><td class="num">—</td><td class="num">— / &#165;128</td><td><b>黑</b></td><td><span class="tag g">基本确定</span></td></tr>
+  </tbody>
+</table>
+
+<h2>三件同型，别买重</h2>
+<p class="sub">版型、领型、门襟、收口完全一致的"徽章飞行员三兄弟"，区别只在徽章主题、配色和店铺</p>
+<table>
+  <thead><tr><th>#</th><th>徽章主题</th><th>主图色</th><th>店铺</th><th>折后／分享价</th><th>怎么选</th></tr></thead>
+  <tbody>
+    <tr><td>01</td><td>CATTEE（赛车风）</td><td>深藏青</td><td>MYES牧野森原创潮牌</td><td class="num">&#165;121 / &#165;128</td><td>徽章最克制、最日常</td></tr>
+    <tr><td>06</td><td>SENLE／SENULANG（美式复古）</td><td>军绿</td><td>mYes牧野森潮牌</td><td class="num">— / &#165;148</td><td>徽章最密、最"潮"</td></tr>
+    <tr><td>08</td><td>QIJIESHI（字母绣标）</td><td>军绿</td><td>MYES牧野森原创潮牌</td><td class="num">— / &#165;138</td><td>绣标为主、无贴布</td></tr>
+  </tbody>
+</table>
+
+<h2>黑色款下单检查清单</h2>
+<p class="sub">照着逐条核，能避开这批里几乎所有坑</p>
+<ul class="ck">
+  <li><b>先看主图色</b>：01／02／05／06／07／08 主图都不是黑色，意味着这些款至少还有别的配色。黑色在不在售，只有 SKU 面板能回答。</li>
+  <li><b>09 必须确认是哪一面</b>：双面穿款，下单前问清"黑色"指外面还是内衬面，这是全批最易买错的一件。</li>
+  <li><b>确认店铺身份</b>：07（猩猩潮品）、10（贰次方 STUDIO）标题里没有牧野森字样，不是本牌；04、05 是天猫「牧野森旗舰店」，与淘宝几家不是同一店。</li>
+  <li><b>01／06／08 三选一</b>：同型不同徽章，一次只买一件就够，别重复下单。</li>
+  <li><b>面料成分和尺码表要自己核</b>：这两项属 SKU 级数据，本页无法提供，下单前在详情页对一遍。</li>
+  <li><b>对比到手价，不只看标价</b>：01 折后 &#165;121／原价 &#165;138，02 折后 &#165;122／原价 &#165;148——标价和到手价差得不小，下单前核一遍券后价。</li>
+</ul>
+
+<h2>数据边界（必须交代）</h2>
+<div class="limit">
+  <h3>本页有什么、缺什么</h3>
+  <ul>
+    <li><b>已确认（来自客户端官方缓存）</b>：10 件商品的官方完整标题、店铺名、商品 ID、主图、原价与折后价。</li>
+    <li><b>已确认（看图实录）</b>：每件的外观——版型、领型、门襟、收口、口袋布置、徽章与装饰、面料观感、主图配色。全部基于实物主图，无推断。</li>
+    <li><b>仍缺（SKU 级数据）</b>：<b>颜色列表、面料成分、尺码表、库存</b>。这些只能由商品详情页接口返回，而该接口在未登录时会强制跳转登录页。</li>
+  </ul>
+  <h3 style="margin-top:16px">关于"淘宝桌面版 + taobao-native 命令行"</h3>
+  <ul>
+    <li>命令行的 RPC 通道本身是<b>通的</b>（<code>_ping</code> 正常返回，能列出全部内置工具）。</li>
+    <li>但每次调用具体工具都会被拦截，返回：<code>内测期间仅开放部分用户使用，请关注后续公告</code>。</li>
+    <li>该文案来自客户端远程配置 <code>mcpDisabledText</code>，是<b>权限不通过时的兜底提示</b>；真正的判定由客户端向服务端发起的一次 mtop 查询决定，结果会缓存约 60 秒。</li>
+    <li>从客户端内部错误码定义看，它把「未登录」和「未开通」分开处理：<code>SESSION_EXPIRED</code> 标记为需要重新登录，而 <code>NOT_AUTHORIZED</code>（当前账号暂未开通 AI 功能）标记为<b>不需要重新登录</b>。当前命中的是后者。</li>
+    <li>结论：这是<b>账号侧的 AI 应用接入权限未开通</b>，不是本地配置或登录问题，因此无法从本机侧解决。</li>
+    <li>可尝试的一步：打开客户端 →「设置」→ 找到「AI 功能／AI 应用配置」→ 确认已开启，并在「Skill 配置（推荐）」模式下对本机 AI 应用点「一键配置」。若界面显示未开放，则确为灰度未覆盖。</li>
+  </ul>
+</div>
+
+<footer>
+  生成时间：2026-10-10 · 数据来源：本机淘宝桌面版客户端本地缓存 + 商品主图逐张实读<br>
+  价格为抓取时点数据，实际以下单页面为准
+</footer>
+
+</div>
+</body>
+</html>
