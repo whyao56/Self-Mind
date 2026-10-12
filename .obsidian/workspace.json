@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "库首页.md",
+                "file": "日志/2026-08-03.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "库首页"
+              "title": "2026-08-03"
             }
           }
         ]
@@ -212,10 +212,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "218d5ea0e845e216",
+  "active": "b741f4c8ce4fb942",
   "lastOpenFiles": [
-    "图片索引.md",
+    "日志/2026-08-03 优化试读.md",
+    "日志/日志 索引.md",
     "库首页.md",
+    "图片索引.md",
     "图片、附件/Pasted image 20260916100954.png",
     "图片、附件/Pasted image 20260917225556.png",
     "图片、附件/Pasted image 20260917225831.png",
@@ -244,8 +246,6 @@
     "全流程报告/穿搭体态执行清单-全流程报告.md",
     "全流程报告/阶段目标-30天-全流程报告.md",
     "日志/2026-09-30.md",
-    "日志/2026-10-02.md",
-    "日志/2026-10-03.md",
     "日志",
     "快记、随笔",
     "图片、附件/0297670E.gif",
