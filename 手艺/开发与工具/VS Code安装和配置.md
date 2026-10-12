@@ -1,3 +1,7 @@
+---
+tags: [领域/开发与工具, 类型/教程]
+---
+
 [vscode使用教程【2026最新】vscode安装教程vscode配置c/c++教程vscode怎么设置中文_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1tyAtetEd1/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 1. 点击官网：[Visual Studio Code - The open source AI code editor | Your home for multi-agent development](https://code.visualstudio.com/)

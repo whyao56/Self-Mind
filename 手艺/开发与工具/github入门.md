@@ -1,3 +1,7 @@
+---
+tags: [领域/开发与工具, 类型/教程]
+---
+
 [这个星球最好用的网站，普通人如何用好GitHub？_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1m4GhzEER3/?spm_id_from=333.337.search-card.all.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 1. [搜索栏](https://www.bilibili.com/video/BV1m4GhzEER3/?t=49.8)

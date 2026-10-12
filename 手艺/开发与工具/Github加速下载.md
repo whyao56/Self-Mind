@@ -1,3 +1,7 @@
+---
+tags: [领域/开发与工具, 类型/教程]
+---
+
 [GITHUB下载加速百倍，最快20M，简单一个步骤，免费无需任何软件关注登陆，另外它还支持docker仓库的加速_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1NN4JexEz3/?spm_id_from=333.1387.favlist.content.click)
 
 关于GitHub加速下载的教程。

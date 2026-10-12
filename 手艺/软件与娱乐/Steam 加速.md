@@ -1,3 +1,7 @@
+---
+tags: [领域/软件与娱乐, 类型/教程]
+---
+
 [仅需7分钟！让你的steam流畅十倍甚至九倍！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1f3411f7iG/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于 Steam 玩家神器推荐的分析**

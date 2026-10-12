@@ -1,7 +1,7 @@
 ---
 title: Obsidian 库整理执行记录
 date: 2026-10-12
-tags: [Obsidian, 知识管理, 库结构, 执行记录]
+tags: [Obsidian, 知识管理, 库结构, 执行记录, 领域/诊断, 类型/报告]
 ---
 
 # Obsidian 库整理执行记录

@@ -1,3 +1,7 @@
+---
+tags: [领域/AI与模型, 类型/教程]
+---
+
 [打工人严选，提效摸鱼两不误的AI小工具_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1rXMk65E9h/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 *AI工具和技能推荐：

@@ -1,3 +1,7 @@
+---
+tags: [领域/Windows系统, 类型/教程]
+---
+
 [有时候，动嘴比动手更快_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1tW4y1A7eA/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 一个Windows语音输入工具——CapsWriter-Offline。B站UP主淳帅二代开发，开源免费，完全离线，按住大写锁定说话，松手自动识别成文字，自动加标点。

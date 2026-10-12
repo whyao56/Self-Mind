@@ -1,3 +1,7 @@
+---
+tags: [领域/AI与模型, 类型/教程]
+---
+
 [Cherry Studio V2 来了，超详细攻略 + 真实使用场景分享_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1apuc6UEir/?spm_id_from=333.337.search-card.all.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 1. [基础操作：模型接入，设置选项](https://www.bilibili.com/video/BV1apuc6UEir?t=31.1)

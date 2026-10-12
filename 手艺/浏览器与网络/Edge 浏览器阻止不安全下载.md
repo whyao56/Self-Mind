@@ -1,3 +1,7 @@
+---
+tags: [领域/浏览器与网络, 类型/踩坑]
+---
+
 [win10浏览器下载文件显示已阻止不安全的怎么办_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1MT411p7PM/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于解决 Edge 浏览器阻止不安全下载的操作整理**

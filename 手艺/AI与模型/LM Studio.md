@@ -1,3 +1,7 @@
+---
+tags: [领域/AI与模型, 类型/教程]
+---
+
 [[2026新版本]LM Studio部署与使用教程！全面支持 N卡/A卡/I卡！一键部署本地语言模型！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1nNfqBDEuJ/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于 LM Studio 0.4.2 版本更新与使用教程的整理**

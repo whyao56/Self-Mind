@@ -1,3 +1,7 @@
+---
+tags: [领域/Windows系统, 类型/踩坑]
+---
+
 [为什么软件装到了D盘，C盘还是会满？_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1NXJEzbEzm/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于软件装 D 盘后 C 盘仍会爆满的解决办法**

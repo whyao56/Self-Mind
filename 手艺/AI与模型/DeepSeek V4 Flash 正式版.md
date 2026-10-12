@@ -1,3 +1,7 @@
+---
+tags: [领域/AI与模型, 类型/教程]
+---
+
 [如何使用满血DeepSeek v4 flash正式版 (教材00:28开始)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV13dGw6oEvD/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于在电脑本地使用 DeepSeek V4 Flash 正式版的完整教程**

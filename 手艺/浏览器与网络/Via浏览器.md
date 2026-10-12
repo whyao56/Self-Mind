@@ -1,3 +1,7 @@
+---
+tags: [领域/浏览器与网络, 类型/教程]
+---
+
 [【打破认知】12个Via隐藏绝技，解锁最强浏览器!!!_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1kJ4m1H7ED/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于 Via 浏览器 12 个隐藏功能的整理**

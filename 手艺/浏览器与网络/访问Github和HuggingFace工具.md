@@ -1,3 +1,7 @@
+---
+tags: [领域/浏览器与网络, 类型/教程]
+---
+
 [这么好的网站，你却打不开？如何顺畅地访问Github和HuggingFace_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV15hBjY3Ezd/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 一个解决GitHub和Hugging Face访问问题的教程。提供了几个方案。

@@ -1,3 +1,7 @@
+---
+tags: [领域/算法, 类型/笔记]
+---
+
 [猴子排序（Bogo Sort） vs 奇迹排序（Miracle Sort）。_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1tMtP6hEPb/?spm_id_from=333.337.search-card.all.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 一个比猴子排序更离谱的“奇迹排序”。

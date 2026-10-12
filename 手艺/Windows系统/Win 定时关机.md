@@ -1,3 +1,7 @@
+---
+tags: [领域/Windows系统, 类型/教程]
+---
+
 [Win11Win10怎么设置定时关机一步轻松搞定_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1pG4y1Z7cF/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于 Win10/Win11 定时关机的操作整理**

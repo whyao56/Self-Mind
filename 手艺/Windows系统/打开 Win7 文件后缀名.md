@@ -1,3 +1,7 @@
+---
+tags: [领域/Windows系统, 类型/教程]
+---
+
 [win7系统如何显示文件后缀名_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1qs411T7cA/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于显示文件后缀名的操作整理**

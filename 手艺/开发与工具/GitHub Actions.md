@@ -1,3 +1,7 @@
+---
+tags: [领域/开发与工具, 类型/教程]
+---
+
 [Github的王炸功能，但很少人知道怎么用？免费运行程序，流水线编译部署，天气推送 签到薅羊毛 领京豆 CI/CD持续集成持续部署_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV11e411i7Xx/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于 GitHub Actions 使用的分析**

@@ -1,3 +1,7 @@
+---
+tags: [领域/Office, 类型/教程]
+---
+
 [WORD如何取消行首字母大写_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV18b4y187NE/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 [【wps教学】取消首字母自动大写_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV16Y4y1z7VG/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)

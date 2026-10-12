@@ -1,3 +1,7 @@
+---
+tags: [领域/软件与娱乐, 类型/踩坑]
+---
+
 [人人都能学会的steam账号注册教程，专治人机验证过不去、对captcha无响应等疑难杂症。。。_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1TC4y1A7Kv/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于 Steam 安装注册疑难杂症的解决办法整理**

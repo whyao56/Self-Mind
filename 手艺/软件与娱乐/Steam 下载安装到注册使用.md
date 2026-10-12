@@ -1,3 +1,7 @@
+---
+tags: [领域/软件与娱乐, 类型/教程]
+---
+
 [正版Steam如何下载？Steam下载｜安装｜注册｜使用全套流程。。_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV15j411w7ER/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于 Steam 从下载安装到注册使用的完整流程整理**

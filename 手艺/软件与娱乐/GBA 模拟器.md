@@ -1,3 +1,7 @@
+---
+tags: [领域/软件与娱乐, 类型/教程]
+---
+
 [GBA模拟器PC端使用教程（附下载链接）_游戏热门视频](https://www.bilibili.com/video/BV1P84y1u7c2/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于 PC 端 GBA 模拟器（VBA）使用教程的整理**

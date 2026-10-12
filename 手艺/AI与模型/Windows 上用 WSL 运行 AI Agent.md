@@ -1,3 +1,7 @@
+---
+tags: [领域/AI与模型, 类型/教程]
+---
+
 [Windows跑AI Agent，WSL才是终极答案，别羡慕Mac了， WSL保姆级全攻略，海量实战教程，一期视频精通_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1pYNm69EPm/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于在 Windows 上用 WSL 运行 AI Agent 的完整攻略**

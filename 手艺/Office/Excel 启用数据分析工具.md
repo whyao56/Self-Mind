@@ -1,3 +1,7 @@
+---
+tags: [领域/Office, 类型/教程]
+---
+
 [原来Excel自带的数据分析工具这么好用！！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Kw4m1Q7xC/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于 Excel 启用数据分析工具的操作整理**

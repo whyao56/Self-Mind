@@ -1,3 +1,7 @@
+---
+tags: [领域/Windows系统, 类型/教程]
+---
+
 [windows为什么有两个命令行工具？命令提示符与PowerShell有什么区别？_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Nx4y147n3/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于 Windows CMD 与 PowerShell 区别的分析**

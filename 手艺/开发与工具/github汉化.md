@@ -1,3 +1,7 @@
+---
+tags: [领域/开发与工具, 类型/教程]
+---
+
 [学渣看不懂英文？不用慌，1分钟学会github汉化！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1n1VtzYEPe/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 1. [首页 | Tampermonkey](https://www.tampermonkey.net/)

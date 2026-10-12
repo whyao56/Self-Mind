@@ -1,3 +1,7 @@
+---
+tags: [领域/Office, 类型/教程]
+---
+
 [露馅了！为什么导师打开护眼模式，就知道你的论文是AI写的_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1uUdBB8EG2/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于清理论文格式痕迹的操作整理**

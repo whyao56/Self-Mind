@@ -1,7 +1,7 @@
 ---
 title: WingMan 聊天僚机 — 全流程报告（整合版）
 date: 2026-10-06
-tags: [项目, AI-Agent, 大模型, 本地优先, 桌面打包, PyInstaller, pywebview, SQLite, 隐私]
+tags: [项目, AI-Agent, 大模型, 本地优先, 桌面打包, PyInstaller, pywebview, SQLite, 隐私, 领域/项目, 类型/报告]
 status: 已发行 v0.2.0（对应重编号前的 0.6.0），241 passed / 1 skipped，7 个 Release 归档完成
 repo: https://github.com/whyao56/WingMan
 ---

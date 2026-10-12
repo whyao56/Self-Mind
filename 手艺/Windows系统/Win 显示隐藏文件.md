@@ -1,3 +1,7 @@
+---
+tags: [领域/Windows系统, 类型/教程]
+---
+
 [如何打开隐藏文件夹_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1hu411Z7kd/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于显示隐藏文件夹的操作整理**

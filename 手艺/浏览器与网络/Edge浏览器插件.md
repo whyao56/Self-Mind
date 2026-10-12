@@ -1,3 +1,7 @@
+---
+tags: [领域/浏览器与网络, 类型/教程]
+---
+
 [9款Edge浏览器必备灵魂插件，少装一个都不行！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1qp421D7Pd/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于 9 款浏览器必装插件的整理**

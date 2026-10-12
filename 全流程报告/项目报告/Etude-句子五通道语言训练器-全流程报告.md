@@ -4,7 +4,7 @@ project: Etude
 version: 0.0.1
 date: 2026-10-08
 repo: https://github.com/whyao56/Etude
-tags: [项目, 语言学习, 大模型, PyInstaller, 间隔重复]
+tags: [项目, 语言学习, 大模型, PyInstaller, 间隔重复, 领域/项目, 类型/报告]
 ---
 
 # Etude 句子五通道语言训练器 — 全流程报告

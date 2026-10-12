@@ -1,3 +1,7 @@
+---
+tags: [领域/浏览器与网络, 类型/踩坑]
+---
+
 [[跳转00:47] 解决edge浏览器显示“你尚未连接”的问题_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1JA4m1F74o/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 Edge 显示“你尚未连接”，但电脑有网，QQ、微信其他软件都能用。解决办法有三个：

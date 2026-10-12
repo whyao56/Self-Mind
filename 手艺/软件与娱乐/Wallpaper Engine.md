@@ -1,3 +1,7 @@
+---
+tags: [领域/软件与娱乐, 类型/教程]
+---
+
 [【Wallpaper Engine】迄今为止最详细的使用教程_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1dX4y1E7vF/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于 Wallpaper Engine 使用教程的整理**

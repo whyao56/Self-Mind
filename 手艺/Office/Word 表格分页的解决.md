@@ -1,3 +1,7 @@
+---
+tags: [领域/Office, 类型/踩坑]
+---
+
 [一堆文字转成表格，我只要十秒_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1LrngzZE1t/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 [word表格分成两页显示怎么办？_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1LgnUzYEM4/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)

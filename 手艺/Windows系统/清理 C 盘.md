@@ -1,3 +1,7 @@
+---
+tags: [领域/Windows系统, 类型/教程]
+---
+
 [【电脑必备】4分钟教你如何系统的清理C 盘！我足足释放20多G!_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1WYWGzQEwe/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于安全有效清理 C 盘的方法整理**

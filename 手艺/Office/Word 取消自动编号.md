@@ -1,3 +1,7 @@
+---
+tags: [领域/Office, 类型/教程]
+---
+
 [word自动编号让人抓狂，影响文本格式，怎样快速取消？方法简单_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1m3411N7Ea/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于 Word 取消自动编号的操作整理**

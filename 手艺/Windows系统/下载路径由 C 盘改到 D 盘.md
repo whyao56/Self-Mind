@@ -1,3 +1,7 @@
+---
+tags: [领域/Windows系统, 类型/教程]
+---
+
 [怎么把电脑下载软件的路径由C盘改到默认为D盘_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1V2tYzMEwc/?spm_id_from=333.337.search-card.all.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于把电脑下载路径由 C 盘改到 D 盘的操作整理**

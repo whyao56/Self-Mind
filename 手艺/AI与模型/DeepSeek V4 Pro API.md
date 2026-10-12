@@ -1,3 +1,7 @@
+---
+tags: [领域/AI与模型, 类型/教程]
+---
+
 [如何付费使用Deepseek v4 pro满血版 (教程00:23开始)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV13Mo5BYEA9/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于在电脑本地使用 DeepSeek V4 Pro API 版本的完整教程**

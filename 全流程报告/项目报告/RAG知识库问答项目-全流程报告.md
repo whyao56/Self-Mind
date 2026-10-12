@@ -1,7 +1,7 @@
 ---
 title: RAG 知识库问答项目搭建 - 全流程报告
 created: 2026-10-03
-tags: [项目, RAG, 检索, 简历, GitHub]
+tags: [项目, RAG, 检索, 简历, GitHub, 领域/项目, 类型/报告]
 ---
 
 # RAG 知识库问答项目搭建 · 全流程报告

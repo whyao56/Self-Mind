@@ -1,3 +1,7 @@
+---
+tags: [领域/Windows系统, 类型/教程]
+---
+
 [win10版！如何打开文件后缀_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1dZ4y1s7aH/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于打开 Win10 文件后缀名的操作整理**

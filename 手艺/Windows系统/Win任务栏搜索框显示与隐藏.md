@@ -1,3 +1,7 @@
+---
+tags: [领域/Windows系统, 类型/教程]
+---
+
 [Win10搜索框，怎么关闭！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1k3411Z7Mu/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于 Win10 任务栏搜索框显示与隐藏的操作整理**

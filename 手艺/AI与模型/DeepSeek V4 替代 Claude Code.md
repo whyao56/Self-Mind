@@ -1,3 +1,7 @@
+---
+tags: [领域/AI与模型, 类型/教程]
+---
+
 [别再花冤枉钱了！Claude Code 接入 DeepSeek V4 完整教程（1%成本平替方案）_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1nL5L6EEq4/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于用 DeepSeek V4 替代 Claude Code 降低编程成本的分析**
