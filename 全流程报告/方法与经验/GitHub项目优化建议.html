@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub 项目优化建议 · 全流程报告</title>
+<style>
+:root{
+  --bg:#f5f6f8; --card:#fff; --line:#e5e7eb; --ink:#1a1a1a; --ink2:#5a6270; --ink3:#8a929e;
+  --red:#e8442a; --redbg:#fff1ee; --amber:#c97a00; --amberbg:#fff8e8;
+  --green:#0f9d58; --greenbg:#eefaf2; --blue:#2563eb; --bluebg:#eef4ff;
+  --codebg:#f6f8fa; --radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;
+  line-height:1.75;-webkit-font-smoothing:antialiased;padding:40px 20px 72px;
+}
+.wrap{max-width:1000px;margin:0 auto;background:var(--card);border:1px solid var(--line);
+  border-radius:18px;padding:52px 56px 60px;box-shadow:0 1px 3px rgba(16,24,40,.04)}
+h1{font-size:29px;font-weight:800;letter-spacing:-.015em;line-height:1.35;margin-bottom:10px}
+h2{font-size:20px;font-weight:800;margin:46px 0 14px;padding-left:13px;position:relative;line-height:1.5}
+h2::before{content:"";position:absolute;left:0;top:.3em;bottom:.3em;width:4px;background:var(--red);border-radius:2px}
+h3{font-size:16.5px;font-weight:700;margin:30px 0 10px;color:#111}
+h4{font-size:15px;font-weight:700;margin:22px 0 8px}
+p{margin:12px 0;color:#242a33}
+a{color:var(--blue);text-decoration:none;border-bottom:1px solid #bfd4ff}
+a:hover{border-bottom-color:var(--blue)}
+strong{font-weight:700;color:#0d1117}
+hr.rule{border:0;border-top:1px solid var(--line);margin:40px 0}
+code{font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+  font-size:.88em;background:var(--codebg);border:1px solid #e3e6ea;border-radius:5px;
+  padding:1.5px 5px;color:#b3306b;word-break:break-word}
+pre.code{background:var(--codebg);border:1px solid var(--line);border-radius:10px;
+  padding:16px 18px;overflow-x:auto;margin:16px 0;line-height:1.62}
+pre.code code{background:none;border:0;padding:0;color:#24292f;font-size:12.8px;white-space:pre}
+blockquote{background:var(--amberbg);border-left:4px solid var(--amber);border-radius:8px;
+  padding:13px 18px;margin:18px 0;color:#6b4a08;font-size:14.2px}
+blockquote code{background:#fff3d6;border-color:#f0dcae;color:#8a5a00}
+ul,ol{margin:12px 0 12px 24px}
+li{margin:6px 0;color:#242a33}
+li>ul,li>ol{margin:6px 0 6px 20px}
+.tw{overflow-x:auto;margin:18px 0;border:1px solid var(--line);border-radius:11px}
+table{border-collapse:collapse;width:100%;font-size:13.8px;background:#fff}
+th{background:#f7f8fa;text-align:left;font-weight:700;padding:11px 14px;
+  border-bottom:1px solid var(--line);white-space:nowrap;color:#111}
+td{padding:10px 14px;border-bottom:1px solid #eef0f3;vertical-align:top;color:#2b313a}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:#fafbfc}
+td strong{color:#0d1117}
+.meta{font-size:14px;color:var(--ink2);border-bottom:1px solid var(--line);
+  padding-bottom:22px;margin-bottom:30px;line-height:2}
+.meta b{color:#111;font-weight:600}
+@media (max-width:760px){
+  .wrap{padding:30px 22px 40px;border-radius:14px}
+  body{padding:16px 10px 40px}
+  h1{font-size:23px}h2{font-size:18px}
+  pre.code code{font-size:12px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>GitHub 项目优化建议 · 全流程报告</h1>
+<div class="meta"><div><b>评审日期</b>：2026-10-13</div><div><b>评审对象</b>：github.com/whyao56（9 个公开仓库）</div><div><b>评审方式</b>：三专家并行评审 + 主理人交叉验证</div></div><p><strong>评审对象</strong>：<code>github.com/whyao56</code> 全部 9 个公开仓库 <strong>评审方式</strong>：软件团队三位成员并行评审（架构师 / QA 工程师 / 产品经理）+ 主理人独立交叉验证 <strong>方法与口径</strong>：所有仓库本地浅克隆后<strong>静态阅读</strong>源码，未执行测试套件、未安装依赖；结论中的行号均为实际读到的代码位置；无法确认的项集中列在第 9 节。</p>
+<hr class="rule">
+<h2>0. 一页结论</h2>
+<p><strong>一句话</strong>：这是一批「工程质量远好于账号呈现」的作品。真正的短板不是代码水平，而是 <strong>1 个隐私风险 + 2 个正确性/成本 bug + 3 个巨型文件 + 零覆盖率 + 账号首页叙事</strong>。</p>
+<div class="tw"><table><thead><tr><th>维度</th><th>现状评分</th><th>结论</th></tr></thead><tbody><tr><td>旗舰工程质量</td><td>★★★★★</td><td>三个旗舰有 CI、有 Release、测试:代码比 0.46–0.59、637 个测试函数里假测试几乎为零 —— <strong>明显高于个人账号平均水准</strong></td></tr><tr><td>代码架构</td><td>★★★☆☆</td><td>TideWatch 达 A 级；WingMan / Etude 均 B-，各有结构性技术债</td></tr><tr><td>测试与 CI</td><td>★★★★☆</td><td>TideWatch A / Etude A- / WingMan B+；<strong>三项目零覆盖率、零 pre-commit</strong>，且 WingMan CI 与产品形态错配</td></tr><tr><td>开源呈现</td><td>★★☆☆☆</td><td>旗舰 README 内容极扎实但<strong>全中文、无英文入口</strong>；账号无 Profile README；仓库平铺无主线</td></tr><tr><td>隐私与合规</td><td>★☆☆☆☆</td><td><strong><code>Self-Mind</code>（Public）含约 59 个个人日记/成长档案 + 432 个附件</strong>；5 个仓库 commit 元数据泄露 QQ 邮箱</td></tr></tbody></table></div>
+<p><strong>最该先做的三件事</strong>：</p>
+<ol><li>🔴 <strong>把 <code>Self-Mind</code> 转 Private</strong>（今天，2 分钟）→ 见 2.1</li><li>🟠 <strong>修 WingMan 的 SQLite 外键失效</strong>（半天）→ 见 3.1</li><li>🟡 <strong>给 WingMan / Etude 补 <code>pyproject.toml</code></strong>（半天）→ 见 5.3，这是一切"可复现"的地基</li></ol>
+<hr class="rule">
+<h2>1. 全景盘点</h2>
+<div class="tw"><table><thead><tr><th>仓库</th><th>类型</th><th>体量</th><th>架构</th><th>质量</th><th>可见性建议</th></tr></thead><tbody><tr><td><strong>WingMan</strong></td><td>旗舰 · 聊天僚机</td><td>118 文件 / 31.6k 行</td><td>B-</td><td>B+</td><td>保持 Public，补英文 README</td></tr><tr><td><strong>Etude</strong></td><td>旗舰 · 词汇训练器</td><td>79 文件 / 18.7k 行</td><td>B-</td><td>A-</td><td>保持 Public，补英文 README</td></tr><tr><td><strong>TideWatch</strong></td><td>旗舰 · 水军识别引擎</td><td>55 文件 / 6.5k 行</td><td><strong>A</strong></td><td><strong>A</strong></td><td>保持 Public，补英文 README + 视觉素材</td></tr><tr><td><strong>Self-Mind</strong></td><td>⚠️ 个人知识库</td><td>640 文件 / 182 md</td><td>—</td><td>—</td><td>🔴 <strong>立即转 Private</strong></td></tr><tr><td>frontend-learning</td><td>学习笔记</td><td>25 文件</td><td>—</td><td>—</td><td>并入 <code>dev-notes</code></td></tr><tr><td>Data-Structures-and-Algorithms</td><td>学习笔记</td><td>24 文件</td><td>—</td><td>—</td><td>并入 <code>dev-notes</code></td></tr><tr><td>Python-Self-Learn</td><td>学习笔记</td><td>47 文件</td><td>—</td><td>—</td><td>并入 <code>dev-notes</code></td></tr><tr><td>git-learning-journal</td><td>空壳</td><td>—</td><td>—</td><td>—</td><td>归档或删除</td></tr><tr><td>my-first-repo</td><td>空壳</td><td>—</td><td>—</td><td>—</td><td>归档或删除</td></tr></tbody></table></div>
+<blockquote><strong>口径说明</strong>：你的账号实际有 <strong>9 个</strong>公开仓库（比最初的 7 个多出两个空壳）。三个旗舰的<strong>工程质量本身不是问题</strong> —— 评审中发现的全部问题都不影响"作品值得看"这个判断，只影响"代码能活多久"。</blockquote>
+<hr class="rule">
+<h2>2. 🔴 立即行动（今天完成，合计 &lt; 30 分钟）</h2>
+<h3>2.1 <code>Self-Mind</code> 转 Private —— 唯一有时效性的一件事</h3>
+<p><strong>实测事实</strong>（主理人独立复核过）：</p>
+<div class="tw"><table><thead><tr><th>目录</th><th>内容</th><th>数量</th></tr></thead><tbody><tr><td><code>日志/</code></td><td>按日期的个人日记（如 <code>2026-08-03.md</code>）</td><td><strong>50</strong></td></tr><tr><td><code>全流程报告/</code></td><td>含个人成长/军师档案</td><td>22</td></tr><tr><td><code>军师/</code></td><td>进度台账、每日任务复盘</td><td><strong>3</strong></td></tr><tr><td><code>快记、随笔/</code></td><td>随手记录</td><td>2</td></tr><tr><td><code>图片、附件/</code></td><td>图片附件（内容未定性）</td><td><strong>432</strong></td></tr></tbody></table></div>
+<p>该仓库同时<strong>无 README、无 LICENSE、无 <code>.gitignore</code></strong>，并在账号首页被 pin 在第 2 位、是仓库列表默认第一项。基本可以判定属于误操作式公开。</p>
+<p><strong>动作（按顺序）</strong>：</p>
+<ol><li><code>Settings → Danger Zone → Change visibility → Make private</code>（2 分钟，立刻止损）</li><li>取消 Pin（30 秒）</li><li>人工复核 432 个附件的性质，再决定去留</li><li>若要「保住技术笔记、藏起日记」→ 拆成两个仓库：<strong>私有日记库</strong> + 公开知识库（可保住 <code>手艺/</code> 95 篇技术笔记 + <code>书/</code>、<code>语言/</code>）</li><li>仅当坚持公开时才做历史清洗（<code>git filter-repo</code> / BFG）</li></ol>
+<blockquote>⚠️ <strong>重要权衡</strong>：历史重写<strong>追不回已被 fork / 缓存 / 搜索引擎收录的副本</strong>。真隐私应当「视为已泄露 + 止损」，而不是「删了历史就没事」。所以第 1 步的转私有是必须的，第 5 步是可选的。</blockquote>
+<h3>2.2 账号"黄金 30 秒"三件事</h3>
+<div class="tw"><table><thead><tr><th>动作</th><th>具体做法</th><th>耗时</th></tr></thead><tbody><tr><td>建 Profile README</td><td>新建同名仓库 <code>whyao56/whyao56</code>，写「我是谁 + 三个旗舰 + 一句话各讲清楚」</td><td>20 分钟</td></tr><tr><td>重排 Pin</td><td>顺序改为 <strong>WingMan → Etude → TideWatch</strong></td><td>2 分钟</td></tr><tr><td>归档 2 个空壳</td><td><code>git-learning-journal</code> / <code>my-first-repo</code> 设为 Archive 或删除</td><td>3 分钟</td></tr></tbody></table></div>
+<p>Profile README 可直接用这个骨架：</p>
+<pre class="code lang-markdown"><code># Whyao · 本地优先的 AI 工具开发者
+
+做能在自己电脑上跑、不依赖云服务的 AI 工具。
+
+## 三个作品
+- **[WingMan](link)** — 把 QQ/微信聊天记录变成可检索记忆，实时分析情绪与意图，给出候选回复推演。
+- **[Etude](link)** — 给一个词，生成 8 条不同语境的例句，铺成五种练法（阅读/听力/口语/打字/造句）。
+- **[TideWatch](link)** — 可解释、可插拔的网络水军与协同行为识别引擎。
+
+## 我在学什么
+数据结构与算法 / Python / Web 前端 —— 笔记都在 [dev-notes](link)。</code></pre>
+<h3>2.3 commit 元数据里的 QQ 邮箱</h3>
+<p><strong>5 个仓库</strong>（Data-Structures-and-Algorithms、Python-Self-Learn、Self-Mind、TideWatch、frontend-learning）的提交历史里带真实 QQ 邮箱 <code>2160444959@qq.com</code>。WingMan 与 Etude 已正确使用 GitHub noreply 地址 —— 说明你会做，只是没做全。</p>
+<pre class="code lang-bash"><code># 全局设置，只影响今后提交（推荐先做这个）
+git config --global user.email "whyao56@users.noreply.github.com"
+
+# 想清理历史，需逐仓库 rebase，成本高且会改变所有 commit hash
+# 建议：除非仓库要公开投递简历，否则不值得做</code></pre>
+<blockquote>这一条<strong>不影响功能</strong>，是隐私卫生问题，优先级低于 2.1 但高于所有代码优化。</blockquote>
+<hr class="rule">
+<h2>3. 🟠 第一周：止血 —— 正确性与成本</h2>
+<p>这两条是<strong>改错时最贵</strong>的问题，先修它们。</p>
+<h3>3.1 【P0 · 半天】WingMan：SQLite 外键在运行期全程失效</h3>
+<p><strong>现象</strong>（<code>WingMan/backend/app/store.py</code>）：</p>
+<pre class="code lang-python"><code># 408-420 行 —— conn() 每次新建连接，只设了 row_factory
+@contextmanager
+def conn(self) -&gt; Iterator[sqlite3.Connection]:
+    with self._lock:
+        c = sqlite3.connect(self.db_path, timeout=15.0)
+        c.row_factory = sqlite3.Row      # ← 没有 PRAGMA foreign_keys
+        ...
+
+# 422-427 行 —— init() 里这行用完即随连接关闭失效
+with self.conn() as c:
+    c.execute("PRAGMA foreign_keys = ON")   # ← 连接一关就没了
+
+# 804-806 行 —— delete_chat 只能自己临时补一句兜底
+with self.conn() as c:
+    c.execute("PRAGMA foreign_keys = ON")</code></pre>
+<p><strong>为什么是问题</strong>：SQLite 的 <code>foreign_keys</code> 是<strong>连接级</strong>开关且<strong>默认关闭</strong>。schema 里大量声明了 <code>ON DELETE CASCADE</code>，但 <code>conn()</code> 建的新连接不带这个开关，于是<strong>除了手工补 PRAGMA 的那几处，其余任何删除路径都不会触发级联</strong>，会静默留下孤儿行（<code>messages</code> / <code>embeddings</code> / <code>engine_runs</code> / <code>activity_log</code>）。这类问题不会报错，只会让数据慢慢烂掉 —— 而且越晚发现越难修，因为已有脏数据。</p>
+<p><strong>改法</strong>：在 <code>conn()</code> 里统一设置，一处修全局好。</p>
+<pre class="code lang-python"><code>@contextmanager
+def conn(self) -&gt; Iterator[sqlite3.Connection]:
+    with self._lock:
+        c = sqlite3.connect(self.db_path, timeout=15.0)
+        c.row_factory = sqlite3.Row
+        c.execute("PRAGMA foreign_keys = ON")   # ← 新增
+        try:
+            yield c
+            c.commit()
+        except Exception:
+            c.rollback()
+            raise
+        finally:
+            c.close()</code></pre>
+<p>然后把 <code>init()</code> 第 426-427 行和 <code>delete_chat()</code> 第 806 行、第 1371 行的"临时 PRAGMA"删掉（已冗余）。</p>
+<p><strong>验收标准</strong>：新增测试 —— 删除一个会话后，断言 <code>messages</code> / <code>embeddings</code> / <code>engine_runs</code> / <code>activity_log</code> 中<strong>无孤儿行</strong>；既有 22 个测试全绿。</p>
+<h3>3.2 【P0 · 半天到一天】Etude：配图线程池导致成本泄漏</h3>
+<p><strong>现象</strong>（<code>Etude/backend/app/providers/images.py</code> 的 <code>_provide_both</code>）：每张图都新建一个线程池，并发发起「检索」和「画图」两路，<strong>败者的画图线程无法取消、会跑完</strong>。</p>
+<p><strong>为什么是问题</strong>：即使检索已经命中、画图结果被丢弃，画图请求仍然会完整执行并<strong>烧掉真实额度/费用</strong>。属于"用户看不见但每月都在付"的泄漏。</p>
+<p><strong>改法</strong>：① 池改为共享（模块级或注入）；② 逻辑改为「检索优先，检索失败才发起画图」；③ 若确实要 <code>both</code> 语义，则在配置里明确标注成本。</p>
+<p><strong>验收标准</strong>：<code>test_image_parallel.py</code> 通过；新增用例用 stub <strong>计数</strong>，断言「检索命中时<strong>不</strong>发起画图请求」。</p>
+<h3>3.3 【P1 · 半天】WingMan：LLM 调用无重试</h3>
+<p><code>Etude/backend/app/providers/llm.py</code> 的指数退避重试写得<strong>比 WingMan 的 llm 层更健壮</strong>。建议反向搬运：为 WingMan 的 <code>complete_json</code> 加瞬时错误（429 / 5xx / 超时）的指数退避。</p>
+<p><strong>验收标准</strong>：新增用例 —— stub 先返回一次 429 再成功，断言发生重试且最终拿到结果。</p>
+<h3>3.4 【P2 · 半天】低风险清理</h3>
+<ul><li>抽 <code>net.py</code>：<code>_trust_env_for</code> 这段私有逻辑在 WingMan 里被<strong>复制了 3 份</strong>，合并为一处。</li><li>Etude <code>images.py</code> 拆包（纯移动，行为零变化）。</li></ul>
+<p><strong>验收标准</strong>：<code>grep</code> 确认无重复定义；测试全绿。</p>
+<hr class="rule">
+<h2>4. 架构与代码优化</h2>
+<h3>4.1 成熟度对比</h3>
+<div class="tw"><table><thead><tr><th>维度</th><th>WingMan</th><th>Etude</th><th>TideWatch</th></tr></thead><tbody><tr><td>分层清晰度</td><td>B-</td><td>B-</td><td><strong>A</strong></td></tr><tr><td>模块耦合</td><td><strong>C+</strong></td><td><strong>C+</strong></td><td><strong>A</strong></td></tr><tr><td>依赖管理</td><td>B</td><td>C</td><td><strong>A</strong></td></tr><tr><td>配置管理</td><td>B+</td><td>B</td><td><strong>A</strong></td></tr><tr><td>可扩展性</td><td>B-</td><td>C</td><td><strong>A</strong></td></tr><tr><td>错误处理</td><td>B-</td><td>B+</td><td><strong>A</strong></td></tr></tbody></table></div>
+<p><strong>结论</strong>：TideWatch <strong>全项 A</strong>，是三个项目里工程实践的标杆；从单文件体量看 WingMan 最需要重构，从分层性质看 Etude 的耦合更"结构性"。</p>
+<h3>4.2 三个结构性技术债</h3>
+<p><strong>① 巨型文件 —— 建议按周分两批拆</strong></p>
+<div class="tw"><table><thead><tr><th>项目</th><th>文件</th><th>行数</th><th>拆法</th></tr></thead><tbody><tr><td>WingMan</td><td><code>backend/app/store.py</code></td><td><strong>1940</strong></td><td>单类约 90 方法的 god object，拆为 <code>store/</code> 包（门面转发），<code>__init__.py</code> &lt; 200 行、各子模块 &lt; 400 行</td></tr><tr><td>WingMan</td><td><code>scripts/preflight.py</code></td><td><strong>1679</strong></td><td>按子命令拆包</td></tr><tr><td>WingMan</td><td><code>backend/app/collect/reader.py</code></td><td><strong>1169</strong></td><td>拆包 + 重导出，各子模块 &lt; 300 行</td></tr><tr><td>Etude</td><td><code>backend/app/db.py</code></td><td><strong>1204</strong></td><td>拆为 <code>db/</code> 包，并把 SRS 领域逻辑（<code>grade_card</code> / <code>undo_grade</code> / <code>push_cards</code>）下沉到 <code>services/review.py</code></td></tr><tr><td>Etude</td><td><code>backend/app/api.py</code></td><td><strong>870</strong></td><td>拆为 <code>api/</code> 包 + <code>jobs.py</code></td></tr><tr><td>Etude</td><td><code>backend/app/providers/images.py</code></td><td><strong>806</strong></td><td>拆包</td></tr><tr><td>前端</td><td>WingMan <code>frontend/index.html</code> / Etude <code>frontend/index.html</code></td><td><strong>4653 / 4519</strong></td><td>零构建是可接受的取舍，建议渐进抽取，不要一步上打包器</td></tr></tbody></table></div>
+<blockquote><strong>为什么拆文件排这么高</strong>：这不是审美问题。<code>store.py</code> 被所有层直接依赖，是<strong>全系统唯一的横切耦合点</strong> —— 任何并行开发都会在这里撞车，任何测试都要拖起半个应用。拆开它，后面每一步都变便宜。</blockquote>
+<p><strong>② Etude：存储层混入领域逻辑</strong></p>
+<p><code>db.py</code> 里既有存储原语，也有 SRS 复习算法的流程编排（算法本体在 <code>srs.py</code>，编排却在 <code>db.py</code>）；同时 <code>api.py</code> 存在两处<strong>反向穿透</strong>：</p>
+<ul><li><code>api.py:804</code> —— 路由里直接写裸 SQL：<code>db.execute("UPDATE examples SET scene_image = ? WHERE id = ?", ...)</code></li><li><code>api.py:661</code> —— 反向调用存储层私有函数：<code>db._loads(...)</code></li></ul>
+<p><strong>改法</strong>：裸 SQL 下沉为 <code>db.set_example_scene_image()</code> 之类的方法；<code>_loads</code> 提升为公共 API；SRS 编排移出存储层。</p>
+<p><strong>③ TideWatch：两处"面向未来规模"的问题</strong></p>
+<ul><li><code>config.py:26</code> 的 <code>PROJECT_ROOT = parents[2]</code> 让引擎<strong>无法作为普通 wheel 安装</strong>（Dockerfile 只能靠 editable + 显式 COPY 绕过）。改法：资源改用 <code>importlib.resources</code>。</li><li><code>CoOccurrenceSignal</code> 做账号两两比较是 <strong>O(A²)</strong> 且无上限。改法：topic 倒排剪枝。</li></ul>
+<h3>4.3 跨项目共性清单（一次学会，三处受益）</h3>
+<div class="tw"><table><thead><tr><th>编号</th><th>问题</th><th>涉及项目</th><th>优先级</th></tr></thead><tbody><tr><td>C-4</td><td>LLM 调用缺重试退避</td><td>WingMan</td><td>P1</td></tr><tr><td>C-5</td><td><strong>无 schema 迁移机制</strong> —— 建议引入 <code>schema_meta(version)</code> + 有序迁移列表</td><td>WingMan / Etude</td><td>P1</td></tr><tr><td>C-6</td><td>CORS 过于宽松</td><td>WingMan / Etude</td><td>P2</td></tr><tr><td>C-8</td><td><strong>无 <code>pyproject.toml</code></strong>，不能 <code>pip install</code></td><td>WingMan / Etude</td><td><strong>P1</strong></td></tr><tr><td>C-9</td><td>密钥与业务数据存在同一个库的 <code>kv</code> 表里</td><td>WingMan</td><td>P2</td></tr><tr><td>C-10</td><td>Etude 无锁定文件</td><td>Etude</td><td>P2</td></tr><tr><td>W-8</td><td>500 响应回显原始异常（可能含堆栈）</td><td>WingMan / Etude</td><td>P2</td></tr><tr><td>W-3/W-6</td><td><code>list_chats</code> 是 1+3N 次查询；<code>async def</code> 内直接同步调用 store，阻塞事件循环</td><td>WingMan</td><td>P1</td></tr></tbody></table></div>
+<blockquote><strong>一处对最初侦察的修正</strong>：我最初判断「WingMan / Etude 根目录没有依赖声明」<strong>不准确</strong> —— 两者依赖都放在 <code>backend/</code> 下。WingMan 有 <code>backend/requirements.txt</code> + <strong><code>requirements.lock.txt</code>（54 行锁定集，CI 实际消费）</strong> + <code>-desktop</code> / <code>-dev</code> 分层，<strong>依赖管理其实做得不错</strong>；Etude 的 <code>requirements.txt</code> 带上下界约束（很好的习惯）。真正的缺口是<strong>都没有 <code>pyproject.toml</code></strong>、不能 <code>pip install -e .</code>，以及 Etude 没有锁定文件。</blockquote>
+<h3>4.4 值得反向移植的 TideWatch 实践</h3>
+<ol><li><strong><code>pyproject.toml</code> + 可选 extras</strong>（<code>[project.optional-dependencies]</code> 的 <code>zh</code> / <code>dev</code>）—— 直接照抄到 WingMan / Etude</li><li><strong><code>make freeze</code> 生成锁定集</strong>并被 CI 消费</li><li><strong>独立 lint job</strong>（<code>ruff check src tests scripts eval</code>）</li><li><strong>CI 矩阵含多 Python 版本 × 可选依赖装/不装双跑</strong>（验证降级路径真的能跑）</li><li><strong>配置优先级链</strong> CLI <code>--set</code> &gt; 环境变量 &gt; YAML，且带<strong>配置指纹</strong>（可复现实验）</li><li><strong>新增信号 = 继承 + <code>@register</code> + 写一段配置，改 0 处引擎代码</strong> —— 插件化的正确示范</li></ol>
+<hr class="rule">
+<h2>5. 测试与 CI 优化</h2>
+<h3>5.1 质量现状矩阵</h3>
+<div class="tw"><table><thead><tr><th>维度</th><th>WingMan</th><th>Etude</th><th>TideWatch</th></tr></thead><tbody><tr><td>测试文件数</td><td>21</td><td>14</td><td>9</td></tr><tr><td>测试代码行数</td><td>8,493</td><td>4,716</td><td>2,393</td></tr><tr><td>生产代码行数（Python）</td><td>18,476</td><td>7,946</td><td>4,092</td></tr><tr><td><strong>测试:生产 比</strong></td><td>0.46</td><td><strong>0.59</strong></td><td>0.58</td></tr><tr><td>仅比 app 部分</td><td>0.56</td><td><strong>0.79</strong></td><td>0.74</td></tr><tr><td>test 函数数（AST 实测）</td><td>233</td><td><strong>249</strong></td><td>155</td></tr><tr><td><strong>无断言的 test 函数</strong></td><td><strong>1</strong>（调用的 helper 内含断言）</td><td><strong>0</strong></td><td><strong>0</strong></td></tr><tr><td>conftest / 夹具</td><td>❌ 无 conftest</td><td>✅ 233 行，夹具丰富</td><td>✅ 190 行，<code>dataset</code> 夹具精心构造</td></tr><tr><td><strong>覆盖率配置 / 门槛</strong></td><td>❌ / ❌</td><td>❌ / ❌</td><td>❌ / ❌</td></tr><tr><td>CI 跑测试</td><td>✅</td><td>✅（双 OS）</td><td>✅（4×py + jieba 双跑）</td></tr><tr><td><strong>CI 跑 lint</strong></td><td>❌（仅 <code>compileall</code> 语法检查）</td><td>❌（装了 ruff 但 CI 不调用）</td><td>✅ 独立 lint job</td></tr><tr><td>pre-commit</td><td>❌</td><td>❌</td><td>❌</td></tr><tr><td>CI 平台矩阵</td><td><strong>仅 ubuntu</strong></td><td>ubuntu + windows</td><td>仅 ubuntu</td></tr><tr><td>依赖缓存</td><td>✅</td><td>✅</td><td><strong>❌ 未开</strong></td></tr></tbody></table></div>
+<p><strong>两个罕见的优点</strong>（先说好的，因为这两点比多数个人项目强）：</p>
+<ul><li><strong>637 个测试函数，无断言的空测试只有 1 个</strong>，而这个还调用了带断言的 helper —— 也就是说<strong>三项目都不存在"假测试"</strong>。这是很不容易的。</li><li>测试:代码比 0.46–0.59 属于健康水位，Etude 单测密度最高（0.79）。</li></ul>
+<h3>5.2 三个最硬的缺口</h3>
+<p><strong>① WingMan：CI 与产品形态错配（最高危）</strong></p>
+<p>WingMan 是 <strong>Windows 桌面程序</strong>（<code>winapi.py</code> 389 行读进程内存、<code>clipboard.py</code> 528 行读剪贴板、<code>desktop.py</code> 613 行、PyInstaller 出包），但 <code>ci.yml:16</code> 只跑 <code>ubuntu-latest</code>。后果是双向的：</p>
+<ul><li><code>test_collect_offwindows.py:203 / 219</code> 的守卫被 <code>skipif(sys.platform != "win32")</code> 挂在 Windows 上 —— <strong>在所有 CI 平台上永远不会执行</strong>；</li><li>Windows 专有能力（读内存、读剪贴板）<strong>零真机覆盖</strong>。</li></ul>
+<p><strong>改法</strong>：CI 加 <code>windows-latest</code> job。参考 Etude —— 它已经做到了双 OS。</p>
+<p><strong>② 三项目零覆盖率度量</strong></p>
+<p><code>grep -i coverage</code> 在三个仓库<strong>全零命中</strong>：无 <code>pytest-cov</code>、无 <code>.coveragerc</code>、无 <code>[tool.coverage]</code>。测试写了 8,493 行却<strong>防不住退化</strong>，因为没有任何东西会在覆盖率掉下去时报警。</p>
+<p><strong>改法</strong>：先度量、再设地板。</p>
+<pre class="code lang-toml"><code># backend/pyproject.toml（WingMan / Etude 新建，TideWatch 追加到现有文件）
+[tool.coverage.run]
+source = ["app"]
+omit = ["*/tests/*"]
+
+[tool.coverage.report]
+show_missing = true
+# 先不设 fail_under，跑两周拿到真实基线后再设「当前值 - 5」</code></pre>
+<pre class="code lang-yaml"><code># ci.yml 中测试步骤
+- run: pip install pytest-cov
+- run: pytest --cov --cov-report=xml --cov-report=term-missing
+- uses: actions/upload-artifact@v4
+  with: { name: coverage, path: coverage.xml }</code></pre>
+<p><strong>③ lint 关卡只有 TideWatch 达标</strong></p>
+<p>WingMan 连 ruff 都没装（<code>requirements-dev.txt</code> 只有 pytest）；Etude 装了 ruff 但 CI 不调用（其 <code>requirements-dev.txt:15</code> 自述"没有强制 lint 关卡"）。建议三项目统一加 ruff，再补 <code>pre-commit</code>。</p>
+<p><strong>附带点名（会被忽略的两处）</strong>：</p>
+<ul><li>WingMan <code>test_privacy_pseudonyms.py:117-120</code> 的隐私历史扫描，在 CI 的<strong>浅克隆下恒为 skip</strong> —— 形同废守卫。</li><li>最大无直测模块：WingMan <code>store.py</code>（1940 行，历史上出过"事实静默覆盖"bug）与 Etude <code>prompts.py</code>（433 行，零直测）。</li></ul>
+<h3>5.3 落地路径（四周）</h3>
+<div class="tw"><table><thead><tr><th>周</th><th>动作</th><th>产出</th></tr></thead><tbody><tr><td>W1</td><td>三项目加 <code>pytest-cov</code> + <code>[tool.coverage]</code>；CI 传 coverage.xml（<strong>先不设门槛</strong>）；WingMan 建最小 <code>pyproject.toml</code></td><td>拿到真实覆盖率基线</td></tr><tr><td>W1</td><td>WingMan CI 加 <code>windows-latest</code> + <code>lint</code> job；Etude CI 加 ruff job；TideWatch 补 <code>cache: pip</code></td><td>补上最硬的 CI 缺口</td></tr><tr><td>W2</td><td>补 5 条 P0 测试（见详细报告的 §4 清单）</td><td>核心链路有回归锚点</td></tr><tr><td>W3</td><td>设 <code>--cov-fail-under</code>（基线 -5），核心模块单列更高门槛；三项目加 pre-commit</td><td>冻结退化</td></tr><tr><td>W4+</td><td>补 P1 清单；Etude 把 <code>ui_smoke.js</code> 接入 CI</td><td>覆盖率稳步上行</td></tr></tbody></table></div>
+<blockquote><strong>双环境策略</strong>：本地 Windows 开发 + Actions Linux 跑。注意用 <code>skipif</code> 显式标注平台假设，别让守卫测试变成"两边都不跑"的死代码 —— 这正是 WingMan 现在的坑。</blockquote>
+<hr class="rule">
+<h2>6. 开源呈现优化</h2>
+<h3>6.1 账号第一印象诊断</h3>
+<div class="tw"><table><thead><tr><th>扣分项</th><th>证据</th></tr></thead><tbody><tr><td>Profile 无 README、无身份说明</td><td>打开账号页无任何自我介绍</td></tr><tr><td><strong>最私密的仓库被 pin 在第 2 位</strong></td><td><code>Self-Mind</code> 是仓库列表默认第一项</td></tr><tr><td>三个旗舰 README <strong>全中文、无英文入口</strong></td><td>国际社区完全看不到；TideWatch 的 topic 有 <code>chinese-nlp</code> / <code>simhash</code>，本该双语</td></tr><tr><td>旗舰与学习笔记、隐私库、空壳<strong>平铺混放</strong></td><td>9 个仓库无叙事主线</td></tr><tr><td><strong>描述把加分项写成减分项</strong></td><td>4 个学习仓库写着"DeepSeek V4.x 指导学习"—— 学习本身是加分项，这样写反而像作业</td></tr><tr><td>WingMan 展示信息过期</td><td>topics 仍含 <code>whisper</code> / <code>asr</code>、描述仍写"双通道语音采集转写"，但代码里已搜不到相关实现</td></tr></tbody></table></div>
+<h3>6.2 仓库分级与处置</h3>
+<div class="tw"><table><thead><tr><th>分级</th><th>仓库</th><th>处置</th></tr></thead><tbody><tr><td><strong>旗舰作品</strong></td><td>WingMan、Etude、TideWatch</td><td>保持 Public，各补 <code>README.en.md</code> + 顶部语言切换；Pin 顺序 WingMan → Etude → TideWatch</td></tr><tr><td><strong>可用工具</strong></td><td>（暂无）</td><td>—</td></tr><tr><td><strong>学习笔记</strong></td><td>frontend-learning、Data-Structures-and-Algorithms、Python-Self-Learn</td><td><strong>合并为 1 个 <code>dev-notes</code></strong>，加一张「学了 → 用在哪」对照表，把作业感转成成长叙事</td></tr><tr><td><strong>应私有 / 应归档</strong></td><td>Self-Mind、git-learning-journal、my-first-repo</td><td>见 2.1 与 2.2</td></tr></tbody></table></div>
+<h3>6.3 README 改进要点（三旗舰共性）</h3>
+<p>现有 README 内容<strong>极其扎实</strong>（WingMan 949 行、Etude 474 行、TideWatch 340 行，含 14 条踩坑记录），问题在<strong>信息顺序和可达性</strong>：</p>
+<ol><li><strong>首屏太长</strong> —— 把版本/状态说明后移到底部，前 20 行只留「它是什么 + 解决什么问题 + 一张截图/GIF」</li><li><strong>补 GIF</strong> —— 三个项目都缺首屏动图，这是转化率最高的一项</li><li><strong>补架构 SVG</strong> —— 现有 ASCII 图换成/补一张 SVG</li><li><strong>加 TOC</strong> —— 长 README 必须有目录</li><li><strong>加英文版</strong> —— <code>README.en.md</code> + 顶部语言切换（推荐这个方案，比单文件双语更好维护）</li><li><strong>各自的差异化章节</strong>：<ul><li>WingMan → 新增「权限与隐私边界」小节（摘要 <code>COMPLIANCE.md</code> 的 3 条红线）—— 这是这个项目最需要主动说明的地方<ul><li>Etude → 新增「理论 → 代码映射」小节（摘要 <code>THEORY.md</code>）—— 这是它真正的护城河<ul><li>TideWatch → 「合规边界」提为一级标题；「实测效果」的消融实验表加一句显眼提示：<strong>合成数据只证明原理，不证明真实准确率</strong>（诚实度是加分项）</li></ul></li></ul><ul><li>TideWatch → 「合规边界」提为一级标题；「实测效果」的消融实验表加一句显眼提示：<strong>合成数据只证明原理，不证明真实准确率</strong>（诚实度是加分项）</li></ul></li></ul><ul><li>Etude → 新增「理论 → 代码映射」小节（摘要 <code>THEORY.md</code>）—— 这是它真正的护城河<ul><li>TideWatch → 「合规边界」提为一级标题；「实测效果」的消融实验表加一句显眼提示：<strong>合成数据只证明原理，不证明真实准确率</strong>（诚实度是加分项）</li></ul></li></ul><ul><li>TideWatch → 「合规边界」提为一级标题；「实测效果」的消融实验表加一句显眼提示：<strong>合成数据只证明原理，不证明真实准确率</strong>（诚实度是加分项）</li></ul></li></ol>
+<hr class="rule">
+<h2>7. 30 天合并路线图</h2>
+<blockquote>按 1 名开发者、每周 2–3 人日投入估算。每个动作都可独立成 commit。</blockquote>
+<h3>第 1 周 —— 止血</h3>
+<div class="tw"><table><thead><tr><th>#</th><th>动作</th><th>验收标准</th></tr></thead><tbody><tr><td>A1</td><td><strong>W-2</strong>：<code>conn()</code> 统一 <code>PRAGMA foreign_keys=ON</code>，删掉各处临时 PRAGMA</td><td>删除会话后 <code>messages</code>/<code>embeddings</code>/<code>engine_runs</code>/<code>activity_log</code> 无孤儿行；22 个测试全绿</td></tr><tr><td>A2</td><td><strong>E-3</strong>：<code>_provide_both</code> 改共享池 + 「检索优先、失败才画图」</td><td>新增用例断言检索命中时不发起画图请求</td></tr><tr><td>A3</td><td><strong>C-4</strong>：为 WingMan <code>complete_json</code> 加指数退避</td><td>429 后重试并成功的用例通过</td></tr><tr><td>A4</td><td>三项目加 <code>pytest-cov</code> + coverage 配置；WingMan CI 加 windows + lint job；Etude CI 加 ruff；TideWatch 补 <code>cache: pip</code></td><td>CI 产出 coverage.xml；Windows job 真的跑起来</td></tr><tr><td>A5</td><td>低风险清理：抽 <code>net.py</code>、<code>images.py</code> 拆包</td><td>行为零变化，测试全绿</td></tr><tr><td>—</td><td>🔴 <code>Self-Mind</code> 转 Private（若尚未做）</td><td>仓库不可公开访问</td></tr></tbody></table></div>
+<h3>第 2 周 —— 拆分巨型文件（第一批）+ 打包</h3>
+<div class="tw"><table><thead><tr><th>#</th><th>动作</th><th>验收标准</th></tr></thead><tbody><tr><td>B1</td><td><strong>W-1</strong>：<code>store.py</code> 拆为 <code>store/</code> 包（门面转发）</td><td>公共 API 签名不变；<code>__init__.py</code> &lt; 200 行，各子模块 &lt; 400 行</td></tr><tr><td>B2</td><td><strong>E-1</strong>：<code>db.py</code> 拆包 + <code>services/review.py</code> 下沉 SRS 领域逻辑</td><td><code>db.grade_card</code> 等公共名不变；复习测试独立通过</td></tr><tr><td>B3</td><td><strong>C-8</strong>：WingMan / Etude 各加 <code>pyproject.toml</code>（PEP 621，参照 TideWatch）</td><td><code>pip install -e ".[dev]"</code> 成功；CI 改用它</td></tr><tr><td>B4</td><td><strong>C-10</strong>：Etude 生成 <code>requirements.lock.txt</code> 并让 CI 消费</td><td>CI 安装步骤改为锁定集</td></tr><tr><td>B5</td><td>账号改造：Profile README + 重排 Pin + 归档 2 个空壳</td><td>首屏 30 秒能看到三个作品</td></tr></tbody></table></div>
+<h3>第 3 周 —— 拆分（第二批）与并发</h3>
+<div class="tw"><table><thead><tr><th>#</th><th>动作</th><th>验收标准</th></tr></thead><tbody><tr><td>C1</td><td><strong>E-2</strong>：<code>api.py</code> 拆包 + <code>jobs.py</code>；裸 SQL 下沉、<code>_loads</code> 提公共</td><td>路由数量不变；<code>test_api.py</code> / <code>test_edit_api.py</code> 全绿</td></tr><tr><td>C2</td><td><strong>W-3 + W-6</strong>：<code>list_chats</code> 改单查询；消除事件循环内的同步 store 调用</td><td>SQL 数从 1+3N 降为 1；<code>grep</code> 守卫禁止 <code>async def</code> 内出现 <code>.store.</code></td></tr><tr><td>C3</td><td><strong>E-4</strong>：图片/语音按例句并行（并发度可配，默认 2–3）</td><td>新增测试断言并发上限不被突破</td></tr><tr><td>C4</td><td><strong>W-7</strong>：<code>reader.py</code> 拆包</td><td>各子模块 &lt; 300 行，测试全绿</td></tr><tr><td>C5</td><td>覆盖率设地板 + 三项目加 pre-commit</td><td><code>--cov-fail-under</code> 生效；本地提交前自动拦截</td></tr></tbody></table></div>
+<h3>第 4 周 —— 演进能力与安全</h3>
+<div class="tw"><table><thead><tr><th>#</th><th>动作</th><th>验收标准</th></tr></thead><tbody><tr><td>D1</td><td><strong>C-5</strong>：引入 <code>schema_meta(version)</code> + 有序迁移列表</td><td>构造老库 fixture 能升到最新且幂等重跑安全</td></tr><tr><td>D2</td><td><strong>T-1 + T-2</strong>：TideWatch 资源改 <code>importlib.resources</code> + 共现剪枝</td><td>非 editable 安装后 CLI 可跑；大账号集耗时下降</td></tr><tr><td>D3</td><td><strong>W-8 + C-6 + C-9</strong>：异常回显改 <code>error_code + request_id</code>；CORS 收紧；密钥与业务库分离</td><td>内部异常响应不含堆栈；CORS 为具体 origin；密钥不再在业务库</td></tr><tr><td>D4</td><td><strong>W-8 收尾</strong>：<code>preflight.py</code> 拆包；修正 WingMan 过期 topics/描述</td><td>ruff + pytest 全绿；展示信息与功能一致</td></tr><tr><td>D5</td><td>三个旗舰各加 <code>README.en.md</code>；4 个学习仓库合并为 <code>dev-notes</code></td><td>英文入口可用；学习笔记有「学了→用在哪」对照表</td></tr></tbody></table></div>
+<hr class="rule">
+<h2>8. 你已有的优势（别改坏）</h2>
+<p>评审中确认的正向资产，优化时注意保留：</p>
+<ul><li>✅ <strong>无硬编码密钥</strong>：全仓库扫描未发现明文 <code>sk-*</code> / <code>api_key="…"</code>；三旗舰 <code>.gitignore</code> 均已排除 <code>.env</code> / <code>*.key</code> / <code>config.json</code></li><li>✅ <strong>WingMan 的 <code>.env.example</code> 写得非常规范</strong> —— 变量分组、注释说明降级行为、明确"留空即用 Mock Provider"</li><li>✅ <strong>Etude 的 CI 有独立 <code>secrets</code> 隐私红线 job</strong>（扫 <code>sk-</code> 前缀 + <code>innerHTML</code> XSS 守卫）—— 建议 WingMan 照抄</li><li>✅ <strong>WingMan 有隐私守卫测试</strong> <code>test_privacy_pseudonyms.py</code>（扫真实姓名 + 提交邮箱），甚至有"守卫的守卫"反证测试</li><li>✅ <strong>测试质量健康</strong>：637 个 test 函数，假测试几乎为零</li><li>✅ <strong>WingMan README 有 14 条踩坑记录</strong> —— 这类内容对读者价值极高，别删</li><li>✅ <strong>TideWatch 的消融实验表格 + 已知限制 7 条</strong> —— 诚实度是它最强的说服力</li><li>✅ <strong>WingMan 的 <code>requirements.lock.txt</code> + 分层 requirements</strong> —— 依赖管理已超出个人项目平均水准</li><li>✅ <strong>Etude 的 <code>requirements.txt</code> 带上下界约束</strong> —— 好习惯</li><li>✅ <strong>TideWatch 的插件化设计</strong> —— 新增信号改 0 处引擎代码，是三个项目里最值得推广的架构模式</li></ul>
+<hr class="rule">
+<h2>9. 待确认项（未编造，需实测）</h2>
+<ol><li><strong>覆盖率数字</strong> —— 本报告未运行测试套件，所有覆盖率为基于测试密度与代码比的<strong>推断值</strong>，须以 <code>pytest-cov</code> 实测为准。</li><li><strong>WingMan <code>routes_persons.py</code> / <code>routes_data.py</code> 是否真的 0 处引用</strong> —— 基于模块名 grep，可能因测试走 TestClient（而非直接 import）而漏计；<code>test_persons.py</code>（767 行）大概率已通过 HTTP 覆盖这些路由，故未列为 P0。</li><li><strong><code>scripts/preflight.py</code>（1,679 行）</strong> —— <code>test_preflight.py</code>（627 行）是否覆盖其全部子命令路径，未逐条核对。</li><li><strong>Etude <code>ui_smoke.js</code> 的运行前置</strong>（是否需 <code>cdb.js</code> / 浏览器）未深入，接入 CI 前需确认依赖。</li><li><strong><code>Self-Mind</code> 的 432 个附件性质</strong> —— 未做内容定性（隐私红线），需你人工复核。</li></ol>
+<hr class="rule">
+<h2>附录：证据与详细报告索引</h2>
+<p>本次评审的三份详细报告（含逐条行号证据、完整代码示例、可套用骨架）：</p>
+<div class="tw"><table><thead><tr><th>报告</th><th>行数</th><th>内容</th></tr></thead><tbody><tr><td><code>architecture-review.md</code></td><td>668</td><td>三项目架构诊断（WingMan 8 条 / Etude 6 条 / TideWatch 5 条）、共性清单 C-1~C-10、文件规模热点表、待确认项</td></tr><tr><td><code>qa-review.md</code></td><td>654</td><td>质量矩阵、三个 <code>ci.yml</code> 逐项体检 + 改进版完整示例、假测试扫描、18 行补测清单 + 3 个 P0 pytest 代码、覆盖率落地</td></tr><tr><td><code>portfolio-review.md</code></td><td>572</td><td>账号诊断（8 条扣分项）、四类分级、三旗舰完整 README 骨架、隐私与合规专项（含 <code>filter-repo</code> / BFG 命令）、16 项优先级 checklist</td></tr></tbody></table></div>
+<p>详细报告的本地路径： <code>C:/Users/HP/WorkBuddy/2026-10-13-11-45-56/deliverables/software-company/review/</code></p>
+<p><strong>评审方法与局限声明</strong>：全部结论基于本地浅克隆的<strong>静态阅读</strong>，未执行测试套件、未安装依赖、未运行被测程序。因此覆盖率、性能和"功能是否真的能跑"这三类结论未经运行验证，已在第 9 节逐条标注。所有引用的行号均为实际读到的代码位置。</p>
+</div>
+</body>
+</html>
