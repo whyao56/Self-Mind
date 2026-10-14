@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "电脑",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -213,7 +213,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5b5fde3c5bd21ec",
+  "active": "218d5ea0e845e216",
   "lastOpenFiles": [
     "其他/10.md",
     "日志/2026-08-04.md",
