@@ -79,7 +79,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -212,7 +213,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "218d5ea0e845e216",
+  "active": "d5b5fde3c5bd21ec",
   "lastOpenFiles": [
     "其他/10.md",
     "日志/2026-08-04.md",
