@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "电脑",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,8 +79,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -213,10 +212,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "218d5ea0e845e216",
+  "active": "b741f4c8ce4fb942",
   "lastOpenFiles": [
-    "其他/10.md",
+    "日志/2026-08-04 深度整合.md",
+    "其他/1.md",
     "日志/2026-08-04.md",
+    "其他/10.md",
     "其他/9.md",
     "其他/8.md",
     "其他/7.md",
@@ -225,7 +226,6 @@
     "其他/4.md",
     "其他/3.md",
     "其他/2.md",
-    "其他/1.md",
     "其他",
     "日志/2026-08-03.md",
     "日志/2026-08-19.md",
@@ -241,7 +241,6 @@
     "日志/2026-10-02.md",
     "全流程报告/诊断与杂项/牧野森外套-黑色款选款信息汇总.md",
     "全流程报告/诊断与杂项/淘宝桌面端-CLI通道诊断与替代方案.md",
-    "全流程报告/方法与经验/GitHub上传完整操作手册-全流程报告.md",
     "图片、附件/Pasted image 20260916100954.png",
     "图片、附件/Pasted image 20260917225556.png",
     "图片、附件/Pasted image 20260917225831.png",
