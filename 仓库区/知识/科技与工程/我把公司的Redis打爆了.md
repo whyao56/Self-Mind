@@ -1,3 +1,8 @@
+---
+title: 我把公司的Redis打爆了
+tags: [领域/科技与工程, 类型/知识卡片]
+---
+
 [我把公司的 Redis 打爆了！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1uPixBVEfC?spm_id_from=333.788.videopod.sections&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 用故事讲Redis误区的视频，把常见坑过了一遍。

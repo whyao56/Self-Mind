@@ -1,3 +1,8 @@
+---
+title: AI图像生成进入玩具市场
+tags: [领域/科技与工程, 类型/知识卡片]
+---
+
 [AI图像生成技术开始进入玩具市场_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Ypuc6UEGH/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 ![[仓库区/图片、附件/Pasted image 20260827164906.png|429]]

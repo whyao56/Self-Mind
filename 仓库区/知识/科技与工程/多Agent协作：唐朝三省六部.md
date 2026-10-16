@@ -1,3 +1,8 @@
+---
+title: 多Agent协作：唐朝三省六部
+tags: [领域/科技与工程, 类型/知识卡片]
+---
+
 https://www.bilibili.com/video/BV1NkPQznESn/?spm_id_from=333.1387.favlist.content.click
 
 一个用唐朝三省六部制做AI多Agent协作的项目，叫Edict。

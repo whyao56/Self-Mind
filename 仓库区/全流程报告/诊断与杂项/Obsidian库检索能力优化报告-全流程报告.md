@@ -1,7 +1,7 @@
 ---
 title: Obsidian 库检索能力优化报告
 date: 2026-10-12
-tags: [Obsidian, 知识管理, 检索, 标签体系, 全流程报告]
+tags: [领域/诊断, Obsidian, 知识管理, 检索, 标签体系, 全流程报告]
 ---
 
 # Obsidian 库检索能力优化报告

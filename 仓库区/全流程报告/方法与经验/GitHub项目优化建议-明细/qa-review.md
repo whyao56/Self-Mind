@@ -1,3 +1,7 @@
+---
+tags: [领域/方法]
+---
+
 # QA 工程师评审报告：WingMan / Etude / TideWatch 测试与工程化质量
 
 > 评审人：Edward（QA 工程师 / software-qa-engineer）

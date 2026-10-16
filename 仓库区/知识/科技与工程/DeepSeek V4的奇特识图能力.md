@@ -1,3 +1,8 @@
+---
+title: DeepSeek V4的奇特识图能力
+tags: [领域/科技与工程, 类型/知识卡片]
+---
+
 [这……这也行? DeepSeek V4正式版奇特的“识图”能力_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1vnuA6ZEEt/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于 DeepSeek 用 ASCII 码“硬整”识图能力的分享**

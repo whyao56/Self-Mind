@@ -1,3 +1,8 @@
+---
+title: 美国地下cult见闻
+tags: [领域/社会与观察, 类型/知识卡片]
+---
+
 [〔牢真〕讲述西大逆天烂活，高达圣诞树，高达气球，鞋胶_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1gqBsBUEMa/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于一则美国地下 cult 见闻口述的整理**

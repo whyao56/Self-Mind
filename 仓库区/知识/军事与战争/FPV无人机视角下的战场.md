@@ -1,3 +1,8 @@
+---
+title: FPV无人机视角下的战场
+tags: [领域/军事与战争, 类型/知识卡片]
+---
+
 [“现实中恐怖片内的怪物第一视角be like”_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV16cuJ62E21/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 刷到一个FPV无人机视角的视频。

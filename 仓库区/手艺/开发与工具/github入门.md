@@ -13,4 +13,4 @@ tags: [领域/开发与工具, 类型/教程]
 7. [设计资源](https://www.bilibili.com/video/BV1m4GhzEER3?t=260.0)
 8. [信息获取](https://www.bilibili.com/video/BV1m4GhzEER3?t=305.7)
 
-Tags: #github #教程 
+Tags: #GitHub #教程 

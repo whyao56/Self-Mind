@@ -1,3 +1,7 @@
+---
+tags: [领域/开发与工具]
+---
+
 [新版pycharm预置中文汉化包,怎么改中文_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1mEeEeGE42/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **关于 PyCharm 中文语言包无法安装的分析**

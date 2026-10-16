@@ -1,3 +1,8 @@
+---
+title: AI模拟自然选择：捕食者与猎物
+tags: [领域/自然与地理, 类型/知识卡片]
+---
+
 
 [哪种捕食者更强？AI模拟自然选择，结果是猎物在教捕食者做事_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1FJwheEEnx/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 

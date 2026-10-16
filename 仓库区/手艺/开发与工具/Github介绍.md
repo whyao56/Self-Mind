@@ -30,4 +30,4 @@ AI赚钱：[bleedline/aimoneyhunter: ai副业赚钱大集合，教你如何利�
 ---
 github基本使用指南：[https://www.bilibili.com/video/BV1Ys421T7x8?t=139.8](https://www.bilibili.com/video/BV1Ys421T7x8?t=140.8)
 
-Tags: #github #AI赚钱 #面试 #英语学习 #HelloGithub #图片压缩 #插件 #键盘 #鼠标 #手柄 #直播 #私有部署 #云端 #笔记软件 #教程
+Tags: #GitHub #AI赚钱 #面试 #英语学习 #HelloGithub #图片压缩 #插件 #键盘 #鼠标 #手柄 #直播 #私有部署 #云端 #笔记软件 #教程

@@ -1,3 +1,8 @@
+---
+title: DeepSeek的专属Harness
+tags: [领域/科技与工程, 类型/知识卡片]
+---
+
 [DeepSeek自己的Harness终于来了？专属Harness为何重要?能有多大提升？_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1WXuz6kEyL/?spm_id_from=333.1007.tianma.1-1-1.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 DeepSeek终于要做自己的Agent了——Harness。

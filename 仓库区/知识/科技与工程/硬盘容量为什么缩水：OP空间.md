@@ -1,3 +1,8 @@
+---
+title: 硬盘容量为什么缩水：OP空间
+tags: [领域/科技与工程, 类型/知识卡片]
+---
+
 [【硬核科普】为什么你购买的硬盘容量总是“缩水”的，硬盘的OP空间说的是什么_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1UZ4y1M7TB/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 一个关于硬盘容量“缩水”的视频，把原因从软件和硬件两层拆了一遍。

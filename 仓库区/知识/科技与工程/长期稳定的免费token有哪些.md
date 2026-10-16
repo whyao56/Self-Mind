@@ -1,3 +1,8 @@
+---
+title: 长期稳定的免费token有哪些
+tags: [领域/科技与工程, 类型/知识卡片]
+---
+
 [长期稳定的免费token，到底有哪些？_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1rngm68Eub/?spm_id_from=333.337.search-card.all.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 个人背景：Cherry Studio寻找api

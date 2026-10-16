@@ -1,3 +1,8 @@
+---
+title: Elasticsearch是什么
+tags: [领域/科技与工程, 类型/知识卡片]
+---
+
 [什么是 Elasticsearch？都要学什么？傻子可懂，一个视频讲清楚_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1gkf1BtETY?spm_id_from=333.788.videopod.sections&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 讲Elasticsearch的视频。从入门到生产实践，把ES的核心概念和常见坑过了一遍。

@@ -1,3 +1,8 @@
+---
+title: 学Redis前请先看完这个
+tags: [领域/科技与工程, 类型/知识卡片]
+---
+
 [学 Redis 前，请务必先看完这个！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1a1sgzfE5d?spm_id_from=333.788.videopod.sections&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 关于 Redis 的教程视频，从入门到生产实践的完整路线。

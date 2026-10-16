@@ -1,3 +1,8 @@
+---
+title: 二维码传输数据与动态RGB码
+tags: [领域/科技与工程, 类型/知识卡片]
+---
+
 [二维码传输数据_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1mzGG67EME/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 

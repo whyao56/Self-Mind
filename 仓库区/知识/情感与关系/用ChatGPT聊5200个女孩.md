@@ -1,3 +1,8 @@
+---
+title: 用ChatGPT聊5200个女孩
+tags: [领域/情感与关系, 类型/知识卡片]
+---
+
 [小伙用ChatGPT帮他聊了5200多个女孩后顺利找到了对象！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Z7421P7xu/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 一个俄罗斯小伙用AI聊了5200多个女孩找到老婆的故事。
