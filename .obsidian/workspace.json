@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作区/军师/进度台账.md",
+                "file": "暂存区/未命名 120.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "进度台账"
+              "title": "未命名 120"
             }
           }
         ]
@@ -212,8 +212,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "218d5ea0e845e216",
+  "active": "b741f4c8ce4fb942",
   "lastOpenFiles": [
+    "工作区/军师/进度台账.md",
     "暂存区/未命名 177.md",
     "仓库区/旧日志/2023-10-03.md",
     "仓库区/旧日志/未命名 1.md",
@@ -239,7 +240,6 @@
     "暂存区/未命名 169.md",
     "暂存区/未命名 168.md",
     "暂存区/未命名 167.md",
-    "暂存区/未命名 166.md",
     "暂存区/未命名",
     "仓库区",
     "工作区",
