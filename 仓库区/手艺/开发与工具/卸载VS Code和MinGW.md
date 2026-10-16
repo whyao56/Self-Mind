@@ -5,7 +5,7 @@ tags: [领域/开发与工具, 类型/教程]
 [如何卸载VS Code和MinGW软件_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1YXtZzgE2r/?spm_id_from=333.1387.favlist.content.click&vd_source=68074f1132646c64dff4aca26e69ae02)
 
 **卸载MinGW：**
-1. 系统属性 → 环境变量![[仓库区/图片、附件/Pasted image 20260913182333.png]]
+1. 系统属性 → 环境变量![[仓库区/图片、附件/卸载VS Code和MinGW-01-系统属性 → 环境变量.png]]
 2. 分别选中用户变量和系统变量里的 Path
 3. 点击编辑（**千万不要点删除**，删除 Path 会很麻烦）
 4. 删除对应的 MinGW 变量（通常是 `你的磁盘:\mingw64\bin`）
